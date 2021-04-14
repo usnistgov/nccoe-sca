@@ -239,13 +239,13 @@ function ReturnToArcher(err) {
   }
   if (err) {
       LogError("Datafeed Failure due to error.");
-      Archer.callback(BuildMessageArray(), {
+      callback(BuildMessageArray(), {
           output: null,
           previousRunContext: JSON.stringify(transportSettings.previousRunContext),
       });
   } else {
       LogInfo("Sending Complete to Archer.");
-      Archer.callback(null, {
+      callback(null, {
           output: null,
           previousRunContext: JSON.stringify(transportSettings.previousRunContext),
       });
