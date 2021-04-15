@@ -22,6 +22,8 @@ const outputWriter = (typeof context !== "undefined") ? context.OutputWriter.cre
   RootNode: "LNresults",
 }) : null; // Used only for Write To Disk
 
+const output = [];
+
 /********************************************************/
 /** DEBUGGING/TESTING SETTINGS
 /********************************************************/
@@ -51,6 +53,7 @@ function LogMessage(text, level) {
       logMap.splice(0, logMap.length - 30);
   }
   console.log(`${level}  :: ${text}`);
+  output.push(`${level}  :: ${text}`);
 }
 
 function LogInfo(text) {
@@ -63,13 +66,6 @@ function LogError(text) {
 
 function LogWarn(text) {
   LogMessage(text, "WARN");
-}
-
-function BuildMessageArray() {
-  if (messageLogMap.size > 0) {
-      return [].concat(...[].concat(...Array.from(messageLogMap)));
-  }
-  return [];
 }
 
 function CaptureError(err) {
@@ -239,13 +235,13 @@ function ReturnToArcher(err) {
   }
   if (err) {
       LogError("Datafeed Failure due to error.");
-      callback(BuildMessageArray(), {
+      callback(output, {
           output: null,
           previousRunContext: JSON.stringify(transportSettings.previousRunContext),
       });
   } else {
       LogInfo("Sending Complete to Archer.");
-      callback(null, {
+      callback(output, {
           output: null,
           previousRunContext: JSON.stringify(transportSettings.previousRunContext),
       });
