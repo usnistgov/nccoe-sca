@@ -375,11 +375,9 @@ class EclypsiumAPI {
 
       let result = await apif.webCall(options);
       result = JSON.parse(JSON.stringify(result.body));
-      const cleanJSON = {
-          records: []
-      };
+      const cleanJSON = [];
       result.Devices.data.forEach((device) => {
-        cleanJSON.records.push({
+        cleanJSON.push({
             record: {
                 hostname: device.hostname,
                 customerId: device.customerId,
