@@ -18,9 +18,7 @@ const transportSettings = {
   ignoreLastRunTime: "true",
 };
 
-const outputWriter = (typeof context !== "undefined") ? context.OutputWriter.create("XML", {
-  RootNode: "LNresults",
-}) : null; // Used only for Write To Disk
+const outputWriter = (typeof context !== "undefined") ? context.OutputWriter.create("XML", null) : null; // Used only for Write To Disk
 
 const output = [];
 
@@ -375,9 +373,11 @@ class EclypsiumAPI {
 
       let result = await apif.webCall(options);
       result = JSON.parse(JSON.stringify(result.body));
-      const cleanJSON = [];
+      const cleanJSON = {
+          records: []
+      };
       result.Devices.data.forEach((device) => {
-        cleanJSON.push({
+        cleanJSON.records.push({
             record: {
                 hostname: device.hostname,
                 customerId: device.customerId,
