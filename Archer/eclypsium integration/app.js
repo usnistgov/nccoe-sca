@@ -241,13 +241,27 @@ function ReturnToArcher(err) {
       });
   } else {
       LogInfo("Sending Complete to Archer.");
-      callback(output, {
+      callback(null, {
           output: null,
           previousRunContext: JSON.stringify(transportSettings.previousRunContext),
       });
   }
   return Promise.resolve(true);
 }
+
+// write completed records to disk
+function SendCompletedRecordsToArcher(data, callId) {
+    return new Promise((resolve) => {
+      // don't write empty data
+      if (transportSettings.debug) {
+        LogInfo(`[${callId}] Sending ${data.length} to Archer`);
+      }
+      if (data && data.length > 0) {
+        outputWriter.writeItem(data);
+      }
+      resolve(true);
+    });
+  }
 
 let apif = null; // will be instantiated from init()
 
@@ -384,6 +398,7 @@ class EclypsiumAPI {
     };
     
     result = new xml2js.Builder(bldrOpts).buildObject(cleanJSON);
+    await SendCompletedRecordsToArcher(result, "CONTENT");
     return result;
   }
 }
