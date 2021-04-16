@@ -18,7 +18,7 @@ const transportSettings = {
   ignoreLastRunTime: "true",
 };
 
-const outputWriter = (typeof context !== "undefined") ? context.OutputWriter.create("XML", null) : null; // Used only for Write To Disk
+const outputWriter = (typeof context !== "undefined") ? context.OutputWriter.create("XML", { RootNode: "results" }) : null; // Used only for Write To Disk
 
 const output = [];
 
@@ -373,11 +373,9 @@ class EclypsiumAPI {
 
       let result = await apif.webCall(options);
       result = JSON.parse(JSON.stringify(result.body));
-      const cleanJSON = {
-          records: []
-      };
+      const cleanJSON = [];
       result.Devices.data.forEach((device) => {
-        cleanJSON.records.push({
+        cleanJSON.push({
             record: {
                 hostname: device.hostname,
                 customerId: device.customerId,
@@ -396,6 +394,8 @@ class EclypsiumAPI {
     };
     
     result = new xml2js.Builder(bldrOpts).buildObject(cleanJSON);
+    result = result.replace("<root>", "");
+    result = result.replace("</root>", "");
     await SendCompletedRecordsToArcher(result, "CONTENT");
     return result;
   }
