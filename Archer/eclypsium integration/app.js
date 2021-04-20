@@ -16,10 +16,10 @@ const transportSettings = {
   client_id: "3vs6DAjqZEqE3g",
   client_secret: "oKGTw3iv8GxzG0AakB_-RQ--ppcAmiTJYUhG6XJ6",
   ignoreLastRunTime: "true",
+  scenario: 2
 };
 
 const outputWriter = (typeof context !== "undefined") ? context.OutputWriter.create("XML", { RootNode: "results" }) : null; // Used only for Write To Disk
-
 const output = [];
 
 /********************************************************/
@@ -392,12 +392,86 @@ class EclypsiumAPI {
             cdata: true
         },
     };
+
+    if (cleanJSON.length === 1) {
+        bldrOpts['rootName'] = 'records';
+    }
     
     result = new xml2js.Builder(bldrOpts).buildObject(cleanJSON);
     result = result.replace("<root>", "");
     result = result.replace("</root>", "");
     await SendCompletedRecordsToArcher(result, "CONTENT");
     return result;
+  }
+
+  async getFirmwareData() {
+    LogInfo("Requesting Eclypsium firmware data");
+    const uuidRegex =  /^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$/g;
+    const headers = this.restHeaders(true);
+    var URI = `${this.URL}/hosts`;
+    var options = {
+        uri: URI,
+        method: "GET",
+        headers: headers
+    };
+    let devices = [];
+    const firmwareOutput = [];
+    let result = await apif.webCall(options);
+    result = JSON.parse(JSON.stringify(result.body));
+    result.data.filter((e) => "customerId" in e && e.customerId.match(uuidRegex)).forEach((e) => devices.push(e));
+
+    for (var i = 2; i <= result.meta.pagesCount; i++) {
+        URI = `${URI}?page=${i}`;
+        options = {
+            uri: URI,
+            method: "GET",
+            headers: headers
+        };
+        result = await apif.webCall(options);
+        result = JSON.parse(JSON.stringify(result.body));
+        result.data.filter((e) => "customerId" in e && e.customerId.match(uuidRegex)).forEach((e) => devices.push(e));
+    }
+
+    for (const device of devices) {
+        URI = `${this.URL}/hosts/${device.id}/components-info`;
+        options = {
+            uri: URI,
+            method: "GET",
+            headers: headers
+        };
+        result = await apif.webCall(options);
+        result = JSON.parse(JSON.stringify(result.body));
+
+        for (const item of result) {
+            if (item.componentName !== "SystemFirmware")
+                continue;
+
+            firmwareOutput.push({
+                record: {
+                    deviceId: device.id,
+                    currentFirmwareDate: item.firmwareVersion.currentFirmwareDate,
+                    currentFirmwareVersion: item.firmwareVersion.currentFirmwareVersion.value
+                }
+            });
+        }
+    }
+
+    const bldrOpts = {
+        headless: true,
+        renderOpts: {
+            pretty: false,
+            cdata: true
+        },
+    };
+
+    if (firmwareOutput.length === 1) {
+        bldrOpts['rootName'] = 'records';
+    }
+    
+    result = new xml2js.Builder(bldrOpts).buildObject(firmwareOutput);
+    result = result.replace("<root>", "");
+    result = result.replace("</root>", "");
+    await SendCompletedRecordsToArcher(result, "CONTENT");
   }
 }
 
@@ -419,7 +493,12 @@ async function getEclypsiumData() {
 
   return ecapi
       .authenticate(transportSettings.client_id, transportSettings.client_secret)
-      .then(() => ecapi.getIntegrityReport())
+      .then(() => {
+          if (transportSettings.scenario === 3)
+            ecapi.getIntegrityReport();
+          else if (transportSettings.scenario === 2)
+            ecapi.getFirmwareData();
+      })
       .catch((error) => {
           return Promise.reject(error);
       });
