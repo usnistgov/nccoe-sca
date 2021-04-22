@@ -494,9 +494,9 @@ async function getEclypsiumData() {
   return ecapi
       .authenticate(transportSettings.client_id, transportSettings.client_secret)
       .then(() => {
-          if (transportSettings.scenario === 3)
+          if (transportSettings.scenario === 3 || transportSettings.scenario === "3")
             ecapi.getIntegrityReport();
-          else if (transportSettings.scenario === 2)
+          else if (transportSettings.scenario === 2 || transportSettings.scenario === "2")
             ecapi.getFirmwareData();
       })
       .catch((error) => {
