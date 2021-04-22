@@ -16,7 +16,7 @@ const transportSettings = {
   client_id: "3vs6DAjqZEqE3g",
   client_secret: "oKGTw3iv8GxzG0AakB_-RQ--ppcAmiTJYUhG6XJ6",
   ignoreLastRunTime: "true",
-  scenario: 2
+  scenario: "2"
 };
 
 const outputWriter = (typeof context !== "undefined") ? context.OutputWriter.create("XML", { RootNode: "results" }) : null; // Used only for Write To Disk
@@ -239,7 +239,7 @@ function ReturnToArcher(err) {
       });
   } else {
       LogInfo("Sending Complete to Archer.");
-      callback(null, {
+      callback(output, {
           output: null,
           previousRunContext: JSON.stringify(transportSettings.previousRunContext),
       });
@@ -468,6 +468,7 @@ class EclypsiumAPI {
         bldrOpts['rootName'] = 'records';
     }
     
+    output.push(JSON.stringify(firmwareOutput));
     result = new xml2js.Builder(bldrOpts).buildObject(firmwareOutput);
     result = result.replace("<root>", "");
     result = result.replace("</root>", "");
