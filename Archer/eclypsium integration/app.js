@@ -19,6 +19,7 @@ const transportSettings = {
   scenario: "2"
 };
 
+const uuidRegex =  /^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$/g;
 const outputWriter = (typeof context !== "undefined") ? context.OutputWriter.create("XML", { RootNode: "results" }) : null; // Used only for Write To Disk
 const output = [];
 
@@ -375,14 +376,16 @@ class EclypsiumAPI {
       result = JSON.parse(JSON.stringify(result.body));
       const cleanJSON = [];
       result.Devices.data.forEach((device) => {
-        cleanJSON.push({
-            record: {
-                hostname: device.hostname,
-                customerId: device.customerId,
-                integrityStatus: device.integrityAggregationStatus,
-                passedIntegrityCheck: device.passedIntegrityCheck,
-                lastScanDate: device.lastScanDate
-            }});
+          if (device.customerId.match(uuidRegex)) {
+            cleanJSON.push({
+                record: {
+                    hostname: device.hostname,
+                    customerId: device.customerId,
+                    integrityStatus: device.integrityAggregationStatus,
+                    passedIntegrityCheck: device.passedIntegrityCheck,
+                    lastScanDate: device.lastScanDate
+                }});
+          }
       });
       
       const bldrOpts = {
@@ -406,7 +409,6 @@ class EclypsiumAPI {
 
   async getFirmwareData() {
     LogInfo("Requesting Eclypsium firmware data");
-    const uuidRegex =  /^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$/g;
     const headers = this.restHeaders(true);
     var URI = `${this.URL}/hosts`;
     var options = {
