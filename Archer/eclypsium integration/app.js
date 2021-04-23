@@ -239,7 +239,7 @@ function ReturnToArcher(err) {
       });
   } else {
       LogInfo("Sending Complete to Archer.");
-      callback(output, {
+      callback(null, {
           output: null,
           previousRunContext: JSON.stringify(transportSettings.previousRunContext),
       });
@@ -254,7 +254,7 @@ function SendCompletedRecordsToArcher(data, callId) {
       if (transportSettings.debug) {
         LogInfo(`[${callId}] Sending ${data.length} to Archer`);
       }
-      if (data && data.length > 0) {
+      if (outputWriter !== null && data && data.length > 0) {
         outputWriter.writeItem(data);
       }
       resolve(true);
@@ -432,8 +432,6 @@ class EclypsiumAPI {
         result.data.filter((e) => "customerId" in e && e.customerId.match(uuidRegex)).forEach((e) => devices.push(e));
     }
 
-    output.push(JSON.stringify(devices));
-
     for (const device of devices) {
         URI = `${this.URL}/hosts/${device.id}/components-info`;
         options = {
@@ -451,6 +449,7 @@ class EclypsiumAPI {
             firmwareOutput.push({
                 record: {
                     deviceId: device.id,
+                    customerId: device.customerId,
                     currentFirmwareDate: item.firmwareVersion.currentFirmwareDate,
                     currentFirmwareVersion: item.firmwareVersion.currentFirmwareVersion.value
                 }
@@ -469,8 +468,7 @@ class EclypsiumAPI {
     if (firmwareOutput.length === 1) {
         bldrOpts['rootName'] = 'records';
     }
-    
-    output.push(JSON.stringify(firmwareOutput));
+
     result = new xml2js.Builder(bldrOpts).buildObject(firmwareOutput);
     result = result.replace("<root>", "");
     result = result.replace("</root>", "");
