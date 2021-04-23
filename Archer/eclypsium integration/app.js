@@ -475,6 +475,7 @@ class EclypsiumAPI {
     result = result.replace("<root>", "");
     result = result.replace("</root>", "");
     await SendCompletedRecordsToArcher(result, "CONTENT");
+    return result;
   }
 }
 
@@ -498,9 +499,9 @@ async function getEclypsiumData() {
       .authenticate(transportSettings.client_id, transportSettings.client_secret)
       .then(() => {
           if (transportSettings.scenario === 3 || transportSettings.scenario === "3")
-            ecapi.getIntegrityReport();
+            return ecapi.getIntegrityReport();
           else if (transportSettings.scenario === 2 || transportSettings.scenario === "2")
-            ecapi.getFirmwareData();
+            return ecapi.getFirmwareData();
       })
       .catch((error) => {
           return Promise.reject(error);
