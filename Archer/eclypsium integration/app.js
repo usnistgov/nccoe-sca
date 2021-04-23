@@ -403,6 +403,8 @@ class EclypsiumAPI {
     result = new xml2js.Builder(bldrOpts).buildObject(cleanJSON);
     result = result.replace("<root>", "");
     result = result.replace("</root>", "");
+    result = result.replace("<records>", "");
+    result = result.replace("</records>", "");
     await SendCompletedRecordsToArcher(result, "CONTENT");
     return result;
   }
@@ -474,6 +476,8 @@ class EclypsiumAPI {
     result = new xml2js.Builder(bldrOpts).buildObject(firmwareOutput);
     result = result.replace("<root>", "");
     result = result.replace("</root>", "");
+    result = result.replace("<records>", "");
+    result = result.replace("</records>", "");
     await SendCompletedRecordsToArcher(result, "CONTENT");
     return result;
   }
