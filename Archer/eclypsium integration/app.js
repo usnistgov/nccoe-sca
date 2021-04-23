@@ -432,6 +432,8 @@ class EclypsiumAPI {
         result.data.filter((e) => "customerId" in e && e.customerId.match(uuidRegex)).forEach((e) => devices.push(e));
     }
 
+    output.push(JSON.stringify(devices));
+
     for (const device of devices) {
         URI = `${this.URL}/hosts/${device.id}/components-info`;
         options = {
