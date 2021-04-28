@@ -1,0 +1,82 @@
+<Device>
+   <Manufacturer>HP</Manufacturer>
+   <Make_and_Model>HP Elite x2 G4</Make_and_Model>
+   <Serial_Number>4B6187E0</Serial_Number>
+   <Original_Equipment_Manufacturer>HP</Original_Equipment_Manufacturer>
+   <Original_Design_Manufacturer>HP</Original_Design_Manufacturer>
+   <Product_Name>HP Elite x2 G4</Product_Name>
+   <UUID>d8c77dd5-351a-b11f-8a62-a5a17c6053e2</UUID>
+   <SKU>7YF16UP#ABA</SKU>
+   <Family>103C_5336AN HP Elite x2</Family>
+   <Configuration_Scan_Results/>
+   <Components>
+      <Component>
+         <Class>Baseboard</Class>
+         <Manufacturer>HP</Manufacturer>
+         <Model>85B9</Model>
+         <Serial>PJJCQH51VDIH8C</Serial>
+         <Revision/>
+         <Version>KBC Version 62.52.00</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>d8c77dd5-351a-b11f-8a62-a5a17c6053e2</Device>
+      </Component>
+      <Component>
+         <Class>Storage Drive</Class>
+         <Manufacturer/>
+         <Model>KBG30ZMV256G KIOXIA</Model>
+         <Serial>0008_0D04_00C2_88A3.</Serial>
+         <Revision>ADHA0102</Revision>
+         <Version/>
+         <Field_Replaceable>false</Field_Replaceable>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>d8c77dd5-351a-b11f-8a62-a5a17c6053e2</Device>
+      </Component>
+      <Component>
+         <Class>Storage Drive</Class>
+         <Manufacturer>Microsoft</Manufacturer>
+         <Model>PS/2 Compatible Mouse</Model>
+         <Serial>ACPI-ETD0753-4-1F093BB4-0</Serial>
+         <Revision/>
+         <Version/>
+         <Field_Replaceable>false</Field_Replaceable>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>d8c77dd5-351a-b11f-8a62-a5a17c6053e2</Device>
+      </Component>
+      <Component>
+         <Class>Storage Drive</Class>
+         <Manufacturer/>
+         <Model>Standard 101/102-Key or Microsoft Natural PS/2 Keyboard for HP Hotkey Support</Model>
+         <Serial>ACPI-HPQ8002-4-1F093BB4-0</Serial>
+         <Revision/>
+         <Version/>
+         <Field_Replaceable>false</Field_Replaceable>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>d8c77dd5-351a-b11f-8a62-a5a17c6053e2</Device>
+      </Component>
+      <Component>
+         <Class>Storage Drive</Class>
+         <Manufacturer>Intel Corporation</Manufacturer>
+         <Model>Intel(R) Wi-Fi 6 AX200 160MHz</Model>
+         <Serial>PCI-VEN_8086-DEV_2723-SUBSYS_00888086-REV_1A-4-1CC085A0-0-00E8</Serial>
+         <Revision/>
+         <Version/>
+         <Field_Replaceable>false</Field_Replaceable>
+         <Addresses>
+            <Address>2.23.133.17.2</Address>
+            <Address>84:C5:A6:EA:29:78</Address>
+         </Addresses>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>d8c77dd5-351a-b11f-8a62-a5a17c6053e2</Device>
+      </Component>
+   </Components>
+</Device>
