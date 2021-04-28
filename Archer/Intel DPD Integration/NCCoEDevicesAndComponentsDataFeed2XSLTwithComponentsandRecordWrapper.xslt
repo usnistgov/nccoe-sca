@@ -25,6 +25,7 @@ that will ingest Intel DPD JSON files from an arbitrary directory
   <xsl:template name="SourceXMLtoRecord">
     <xsl:param name="SourceXML" />
     <!--Device-->
+    <Records>
     <Device>
       <Manufacturer>
         <xsl:value-of select="$SourceXML/map/Header/Manufacturer"/>
@@ -123,6 +124,7 @@ that will ingest Intel DPD JSON files from an arbitrary directory
 
       </Components>
     </Device>
+    </Records>
   </xsl:template>
 
   <xsl:template match="@* | node()">
