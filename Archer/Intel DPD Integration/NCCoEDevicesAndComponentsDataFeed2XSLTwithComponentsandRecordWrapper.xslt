@@ -1,10 +1,4 @@
-﻿<!-- 
-
-This file should be used to create one Device. Marking this for use with the JavaScript DataFeed
-that will ingest Intel DPD JSON files from an arbitrary directory 
-
--->
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <xsl:stylesheet
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:math="http://www.w3.org/2005/xpath-functions/math"
@@ -25,7 +19,6 @@ that will ingest Intel DPD JSON files from an arbitrary directory
   <xsl:template name="SourceXMLtoRecord">
     <xsl:param name="SourceXML" />
     <!--Device-->
-    <Records>
     <Device>
       <Manufacturer>
         <xsl:value-of select="$SourceXML/map/Header/Manufacturer"/>
@@ -121,10 +114,8 @@ that will ingest Intel DPD JSON files from an arbitrary directory
             </Device>
           </Component>
         </xsl:for-each>
-
       </Components>
     </Device>
-    </Records>
   </xsl:template>
 
   <xsl:template match="@* | node()">
