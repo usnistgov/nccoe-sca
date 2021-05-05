@@ -26,9 +26,9 @@
       <Manufacturer>
         <xsl:value-of select="$SourceXML/map/PLATFORM/PLATFORMMANUFACTURERSTR"/>
       </Manufacturer>
-      <Model>
+      <Make_and_Model>
         <xsl:value-of select="$SourceXML/map/PLATFORM/PLATFORMMODEL"/>
-      </Model>
+      </Make_and_Model>
       <Serial_Number>
         <xsl:value-of select="$SourceXML/map/PLATFORM/PLATFORMSERIAL"/>
       </Serial_Number>
