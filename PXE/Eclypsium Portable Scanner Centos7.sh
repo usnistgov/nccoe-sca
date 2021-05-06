@@ -5,7 +5,7 @@ provisioner_script="hirs-provisioner"
 allcomponents_script="/opt/paccor/scripts/allcomponents.sh"
 allcomponents_output_file="system.json"
 collator_host="collator.sca.nccoe.org"
-collator_path="/api/data"
+collator_path="/upload"
 
 # Script to scan and register computing device in the Eclypsium service from Centos7 network boot environment
 
@@ -27,6 +27,6 @@ echo "Exporting the system and component data..."
 bash "$allcomponents_script > $allcomponents_output_file"
 
 echo "Pushing system and component data to collator..."
-curl -F `data=@$allcomponents_output_file` http://$collator_host$collator_path -d "UUID=$UUID"
+curl -F "jsonFile=@$allcomponents_output_file" -F "UUID=$UUID" http://$collator_host$collator_path 
 
 
