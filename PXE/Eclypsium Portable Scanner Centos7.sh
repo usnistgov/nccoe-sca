@@ -6,7 +6,7 @@ provisioner_script="hirs-provisioner"
 allcomponents_script="/opt/paccor/scripts/allcomponents.sh"
 allcomponents_output_file="system.json"
 collator_host="collator.lab.nccoe.org"
-collator_path="/upload"
+collator_path="/api/upload"
 
 # Script to scan and register computing device in the Eclypsium service from Centos7 network boot environment
 
