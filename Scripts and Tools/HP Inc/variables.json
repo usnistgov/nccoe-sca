@@ -1,0 +1,11 @@
+{
+    "SS_SB_KeyProt": "Sure Start Secure Boot Keys Protection",
+    "FW_RIPD": "Enhanced HP Firmware Runtime Intrusion Prevention and Detection",
+    "TL_Power_Off": "Power Off Upon Cover Removal",
+    "TL_Clear_TPM": "Clear TPM on boot after cover removal",
+    "SS_GPT_HDD": "Save/Restore GPT of System Hard Drive",
+    "SS_GPT_Policy": "Boot Sector (MBR/GPT) Recovery Policy",
+    "DMA_Protection": "DMA Protection",
+    "PreBoot_DMA": "Pre-boot DMA protection",
+    "Cover_Sensor": "Cover Removal Sensor"
+}

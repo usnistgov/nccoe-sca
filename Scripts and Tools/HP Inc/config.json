@@ -1,0 +1,9 @@
+{
+    "BaseDir" : "C:\\hpsca",
+    "EventDir" : "C:\\hpsca\\Events",
+    "LastEventFile" : "C:\\hpsca\\lastEvent.json",
+    "varConfigFile" : "C:\\hpsca\\variables.json",
+    "eventConfigFile" : "C:\\hpsca\\events.json",
+    "logfile" : "C:\\hpsca\\out.log",
+    "ServerAddress" : "http://collator.lab.nccoe.org/api/upload"
+}

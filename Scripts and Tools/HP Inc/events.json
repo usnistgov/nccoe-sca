@@ -1,0 +1,282 @@
+{
+    "0x031E": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x031F": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x0320": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x0322": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x0324": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x0326": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x0328": {
+        "Category": "HP_Sure_Start",
+        "Value": "Policy violation"
+    },
+    "0x032B": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x032C": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x032D": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x032E": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x032F": {
+        "Category": "HP_Sure_Start",
+        "Value": "Revert to default"
+    },
+    "0x0330": {
+        "Category": "Sys_Config",
+        "Value": "Policy violation"
+    },
+    "0x0336": {
+        "Category": "HP_Sure_Start",
+        "Value": "Attack mitigation"
+    },
+    "0x0337": {
+        "Category": "HP_Sure_Start",
+        "Value": "Attack mitigation"
+    },
+    "0x801F": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x8020": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x8021": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x8022": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x8026": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x8028": {
+        "Category": "HP_Sure_Start",
+        "Value": "Revert to default"
+    },
+    "0x802B": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x802D": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x802F": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x821E": {
+        "Category": "HP_Sure_Start",
+        "Value": "SMM execution halted"
+    },
+    "0x821F": {
+        "Category": "HP_Sure_Start",
+        "Value": "SMM execution halted"
+    },
+    "0x8220": {
+        "Category": "HP_Sure_Start",
+        "Value": "SMM execution halted"
+    },
+    "0x8221": {
+        "Category": "HP_Sure_Start",
+        "Value": "SMM execution halted"
+    },
+    "0x8222": {
+        "Category": "HP_Sure_Start",
+        "Value": "SMM execution halted"
+    },
+    "0x8225": {
+        "Category": "HP_Sure_Start",
+        "Value": "SMM execution halted"
+    },
+    "0x831E": {
+        "Category": "HP_Sure_Start",
+        "Value": "SMM execution halted"
+    },
+    "0x831F": {
+        "Category": "HP_Sure_Start",
+        "Value": "SMM execution halted"
+    },
+    "0x8320": {
+        "Category": "HP_Sure_Start",
+        "Value": "SMM execution halted"
+    },
+    "0x8321": {
+        "Category": "HP_Sure_Start",
+        "Value": "SMM execution halted"
+    },
+    "0x8322": {
+        "Category": "HP_Sure_Start",
+        "Value": "SMM execution halted"
+    },
+    "0x8323": {
+        "Category": "HP_Sure_Start",
+        "Value": "SMM execution halted"
+    },
+    "0x8324": {
+        "Category": "HP_Sure_Start",
+        "Value": "SMM execution halted"
+    },
+    "0x841F": {
+        "Category": "Secure_Platform Management",
+        "Value": "Attack mitigation"
+    },
+    "0x8428": {
+        "Category": "HP_Sure_Recover",
+        "Value": "Recovery initiated"
+    },
+    "0x8429": {
+        "Category": "HP_Sure_Recover",
+        "Value": "Recovery success"
+    },
+    "0x842A": {
+        "Category": "HP_Sure_Recover",
+        "Value": "Recovery failure"
+    },
+    "0x8520": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x8521": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x8522": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x8525": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x8527": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x852A": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery failure"
+    },
+    "0x861E": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x861F": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x8621": {
+        "Category": "HP_Sure_Start",
+        "Value": "Revert to default"
+    },
+    "0x8622": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x8623": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x8624": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery failure"
+    },
+    "0x8625": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery"
+    },
+    "0x8626": {
+        "Category": "HP_Sure_Start",
+        "Value": "Policy violation"
+    },
+    "0x8627": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery failure"
+    },
+    "0x8628": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery failure"
+    },
+    "0x862A": {
+        "Category": "HP_Sure_Start",
+        "Value": "Recovery failure"
+    },
+    "0x862B": {
+        "Category": "HP_Sure_Start",
+        "Value": "Integrity violation"
+    },
+    "0x862E": {
+        "Category": "HP_Sure_Start",
+        "Value": "Policy violation"
+    },
+    "0x871E": {
+        "Category": "HP_Sure_Start",
+        "Value": "Policy violation"
+    },
+    "0x871F": {
+        "Category": "HP_Sure_Start",
+        "Value": "Illegal DMA Blocked"
+    },
+    "0x881E": {
+        "Category": "HP_Sure_Admin",
+        "Value": "Power off due to failure authentication"
+    },
+    "0x881F": {
+        "Category": "HP_Sure_Admin",
+        "Value": "WMI blocked due to failed authentication"
+    },
+    "0x891E": {
+        "Category": "HP_Sure_Start",
+        "Value": "EpSC execution halted"
+    },
+    "0x891F": {
+        "Category": "HP_Sure_Start",
+        "Value": "EpSC execution halted"
+    },
+    "0x8920": {
+        "Category": "HP_Sure_Start",
+        "Value": "EpSC execution halted"
+    },
+    "0x8921": {
+        "Category": "HP_Sure_Start",
+        "Value": "EpSC execution halted"
+    },
+    "0x8A1E": {
+        "Category": "HP_TamperLock",
+        "Value": "Cover removed"
+    },
+    "0x8A20": {
+        "Category": "HP_TamperLock",
+        "Value": "TPM cleared based on Policy"
+    }
+}
