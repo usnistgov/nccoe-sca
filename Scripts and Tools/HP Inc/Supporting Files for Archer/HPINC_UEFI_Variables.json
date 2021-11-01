@@ -1,0 +1,73 @@
+{
+    "SS_SB_KeyProt": {
+        "Name": "Sure Start Secure Boot Keys Protection",
+        "Category": "HP Sure Start",
+        "Description" : "Provides enhanced protection of the secure boot databases and keys used by BIOS to verify the integrity and authenticity of the OS bootloader before launching it at boot.",
+        "PossibleValues" : ["Disable", "Enable"],
+        "Recommended Value" : "Enable"
+    },
+
+    "FW_RIPD": {
+        "Name": "Enhanced HP Firmware Runtime Intrusion Prevention and Detection",
+        "Category": "HP Sure Start",
+        "Description" : "Utilizes specialized hardware in the platform chipset to prevent, detect, and remediate anomalies in the Runtime HP SMM BIOS.",
+        "PossibleValues" : ["Disable", "Enable"],
+        "Recommended Value" : "Enable"
+    },
+
+    "TL_Power_Off": {
+        "Name": "Power Off Upon Cover Removal",
+        "Category": "HP Tamperlock",
+        "Description" : "HP Tamperlock feature: The system immediately turns off if the cover is removed while the system is On or in Sleep state S3 or Modern Standby).",
+        "PossibleValues" : ["Disable", "Enable"],
+        "Recommended Value" : "Enable"
+    },
+
+    "TL_Clear_TPM": {
+        "Name": "Clear TPM on boot after cover removal",
+        "Category": "HP Tamperlock",
+        "Description" : "TPM is cleared on the next startup after the cover is removed. Be aware that all customer keys in the TPM are cleared. This setting should only be Enabled in a situation where manual recovery is possible using remote backups, or no recovery is desired. In the case of BitLocker being enabled, the BitLocker recovery key is required to decrypt the drive.",
+        "PossibleValues" : ["Disable", "Enable"],
+        "Recommended Value" : "Depends on customer requirements"
+    },
+
+    "SS_GPT_HDD": {
+        "Name": "Save/Restore GPT of System Hard Drive",
+        "Category": "HP Sure Start",
+        "Description" : "HP Sure Start maintains a protected backup copy of the MBR/GPT partition table from the primary drive and compares the backup copy to the primary on each boot. If a difference is detected, the user is prompted and can choose to recover from the backup to the original state, or to update the protected backup copy with the changes.",
+        "PossibleValues" : ["Disable", "Enable"],
+        "Recommended Value" : "Enable"
+    },
+
+    "SS_GPT_Policy": {
+        "Name": "Boot Sector (MBR/GPT) Recovery Policy",
+        "Category": "HP Sure Start",
+        "Description" : "Defines Sure Start behavior to either Local User Control or Autormatic to restore the MBR/GPT to the saved state any time differences are encountered. ",
+        "Possible Values" : ["Local user control", "Recover in event of corruption"],
+        "Recommended Value" : "Recover in event of corruption"
+    },
+
+    "DMA_Protection": {
+        "Name": "DMA Protection",
+        "Category": "HP Tamperlock",
+        "Description" : "BIOS will configure IOMMU hardware for use by operating systems that support DMA protection.",
+        "PossibleValues" : ["Disabled", "Enabled"],
+        "Recommended Value" : "Enabled"
+    },
+
+    "PreBoot_DMA": {
+        "Name": "Pre-boot DMA protection",
+        "Category": "HP Tamperlock",
+        "Description":"IOMMU hardwarebased DMA protection is enabled in a BIOS pre-boot environment for Thunderbolt and / or all internal and external PCI-e attached devices.",
+        "PossibleValues" : ["Thunderbolt Only", "All PCI-e Devices"],
+        "Recommended Value" : "Enabled"
+    },
+
+    "Cover_Sensor": {
+        "Name": "Cover Removal Sensor",
+        "Category": "HP Tamperlock",
+        "Description" : "Policy defined actions taken when Tamperlock cover removal sensor is triggered.  Administrator credential or password requires valid response before continuing to startup after the cover is opened.",
+        "Possible Values" : ["Disable", "Notify user", "Administrator Credential", "Administrator Password"],
+        "Recommended Value" : ["Administrator Credential", "Administrator Password"]
+    }
+}

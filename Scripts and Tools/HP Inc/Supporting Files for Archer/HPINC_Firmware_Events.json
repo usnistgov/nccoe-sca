@@ -1,0 +1,422 @@
+[
+    {
+        "SID_EID": "0x031e",
+        "EventText": "HP Sure Start found the primary BIOS in shared flash memory is either corrupted or missing.  Possible causes include but not limited to interrupted BIOS update or recent BIOS attack.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x031f",
+        "EventText": "HP Sure Start found the backup BIOS is either corrupted or missing.  Possible causes include but not limited to interrupted BIOS update.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x0320",
+        "EventText": "HP Sure Start found shared flash memory layout is different from original factory settings.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x0322",
+        "EventText": "HP Sure Start has recovered the primary BIOS in shared flash memory.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x0324",
+        "EventText": "HP Sure Start found shared flash memory layout is different from original factory settings and has repaired the shared flash layout.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x0326",
+        "EventText": "HP Sure Start found that the primary BIOS in shared flash memory on resume from Sleep is different than what system originally booted with.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x0328",
+        "EventText": "HP Sure Start found that the 'BIOS Update Policy' setting was set to Locked but was unable to honor policy as backup copy of BIOS may be corrupted or missing.",
+        "Category": "HP Sure Start",
+        "Value": "Policy violation"
+    },
+    {
+        "SID_EID": "0x032b",
+        "EventText": "HP Sure Start integrity checking on backup copy of critical factory configured parameters failed and is no longer being used.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x032c",
+        "EventText": "HP Sure Start integrity checking on backup copy of critical network parameters data failed and is no longer being used.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x032d",
+        "EventText": "HP Sure Start integrity checking on backup copy of shared flash memory layout description failed and is no longer being used.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x032e",
+        "EventText": "HP Sure Start has found and repaired an integrity issue with saved audit logs; some logging data may have been lost.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x032f",
+        "EventText": "HP Sure Start policy settings have been corrupted and reverted to factory defaults.",
+        "Category": "HP Sure Start",
+        "Value": "Revert to default"
+    },
+    {
+        "SID_EID": "0x0330",
+        "EventText": "System was placed in manufacturing programming mode.",
+        "Category": "System Configuration",
+        "Value": "Policy violation"
+    },
+    {
+        "SID_EID": "0x0336",
+        "EventText": "A BIOS update was blocked because it did not meet the policy version requirements.",
+        "Category": "HP Sure Start",
+        "Value": "Attack mitigation"
+    },
+    {
+        "SID_EID": "0x0337",
+        "EventText": "A BIOS update was blocked because it would have rolled back the current BIOS to an older BIOS which was prohibited by policy.",
+        "Category": "HP Sure Start",
+        "Value": "Attack mitigation"
+    },
+    {
+        "SID_EID": "0x801f",
+        "EventText": "HP Sure Start repaired the onboard ethernet configuration data.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x8020",
+        "EventText": "HP Sure Start has recovered the primary BIOS in shared flash memory from a copy located on flash.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x8021",
+        "EventText": "HP Sure Start has recovered the primary BIOS in shared flash memory from a copy located on the HDD.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x8022",
+        "EventText": "HP Sure Start has recovered the primary BIOS in shared flash memory from a copy located on a USB Key.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x8026",
+        "EventText": "HP Sure Start has repaired machine specific data that was corrupted.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x8028",
+        "EventText": "HP Sure Start has determined that the BIOS settings policy store has been corrupted. Recovery of the BIOS setting policy store resulted in all BIOS settings reverting to factory defaults.",
+        "Category": "HP Sure Start",
+        "Value": "Revert to default"
+    },
+    {
+        "SID_EID": "0x802b",
+        "EventText": "HP Sure Start detected corrupted security critical BIOS policy/data settings and recovered from the backup copy in the HP Sure Start private flash.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x802d",
+        "EventText": "HP Sure Start detected a problem with and corrected part of the data storage overhead related to BIOS settings. No BIOS settings were changed.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x802f",
+        "EventText": "HP Sure Start has recovered the boot drive partition sector (Master Boot Record or GUID Partition Table) from the HP Sure Start back-up copy.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x821e",
+        "EventText": "HP Sure Start 'HP Firmware Runtime Intrusion Detection' has detected an unauthorized attempt to modify HP runtime firmware or disable HP runtime firmware protection mechanisms. System may be unstable until restarted.",
+        "Category": "HP Sure Start",
+        "Value": "SMM execution halted"
+    },
+    {
+        "SID_EID": "0x821f",
+        "EventText": "HP Sure Start 'HP Firmware Runtime Intrusion Detection' has detected an unauthorized attempt to modify HP runtime Firmware within main (DRAM) memory. System may be unstable until restarted.",
+        "Category": "HP Sure Start",
+        "Value": "SMM execution halted"
+    },
+    {
+        "SID_EID": "0x8220",
+        "EventText": "HP Sure Start 'HP Firmware Runtime Intrusion Detection' has detected an attempt to execute unauthorized code within the HP System Management Mode portion of main (DRAM) memory. System may be unstable until restarted.",
+        "Category": "HP Sure Start",
+        "Value": "SMM execution halted"
+    },
+    {
+        "SID_EID": "0x8221",
+        "EventText": "HP Sure Start 'HP Firmware Runtime Intrusion Detection' has detected an attempt to access unauthorized data outside of the HP System Management Mode portion of main (DRAM) memory. System may be unstable until restarted.",
+        "Category": "HP Sure Start",
+        "Value": "SMM execution halted"
+    },
+    {
+        "SID_EID": "0x8222",
+        "EventText": "HP Sure Start 'HP Firmware Runtime Intrusion Detection' has detected an attempt to execute unauthorized code outside of the HP System Management Mode portion of main (DRAM) memory. System may be unstable until restarted.",
+        "Category": "HP Sure Start",
+        "Value": "SMM execution halted"
+    },
+    {
+        "SID_EID": "0x8225",
+        "EventText": "HP Sure Start 'HP Firmware Runtime Intrusion Detection' has detected a problem which may indicate a security problem. System may be unstable until restarted.",
+        "Category": "HP Sure Start",
+        "Value": "SMM execution halted"
+    },
+    {
+        "SID_EID": "0x831e",
+        "EventText": "HP Sure Start 'HP Firmware Runtime Intrusion Detection' has detected an unauthorized change to HP runtime Firmware within main (DRAM) memory. System may be unstable until restarted.",
+        "Category": "HP Sure Start",
+        "Value": "SMM execution halted"
+    },
+    {
+        "SID_EID": "0x831f",
+        "EventText": "HP Sure Start 'HP Firmware Runtime Intrusion Detection' has detected an unauthorized change to the System Management Mode Base Address (SMBASE) configuration of the CPU. System may be unstable until restarted.",
+        "Category": "HP Sure Start",
+        "Value": "SMM execution halted"
+    },
+    {
+        "SID_EID": "0x8320",
+        "EventText": "HP Sure Start 'HP Firmware Runtime Intrusion Detection' has detected an unauthorized change to critical Peripheral Component Interconnect (PCI) configuration settings within the core logic. System may be unstable until restarted.",
+        "Category": "HP Sure Start",
+        "Value": "SMM execution halted"
+    },
+    {
+        "SID_EID": "0x8321",
+        "EventText": "HP Sure Start 'HP Firmware Runtime Intrusion Detection' stopped receiving status messages from the monitoring application. System may be unstable until restarted.",
+        "Category": "HP Sure Start",
+        "Value": "SMM execution halted"
+    },
+    {
+        "SID_EID": "0x8322",
+        "EventText": "HP Sure Start 'HP Firmware Runtime Intrusion Detection' received an invalid manifest describing the memory space to be monitored during runtime. Runtime Intrusion Detection is disabled for this boot.",
+        "Category": "HP Sure Start",
+        "Value": "SMM execution halted"
+    },
+    {
+        "SID_EID": "0x8323",
+        "EventText": "HP Sure Start 'HP Firmware Runtime Intrusion Detection' has experienced a general failure of the monitoring application. System may be unstable until restarted.",
+        "Category": "HP Sure Start",
+        "Value": "SMM execution halted"
+    },
+    {
+        "SID_EID": "0x8324",
+        "EventText": "HP Sure Start 'HP Firmware Runtime Intrusion Detection' has detected an unauthorized change to critical Memory Mapped IO configuration settings within the core logic. System may be unstable until restarted.",
+        "Category": "HP Sure Start",
+        "Value": "SMM execution halted"
+    },
+    {
+        "SID_EID": "0x841f",
+        "EventText": "An HP Secure Platform Management command was received that was rejected.",
+        "Category": "Secure Platform Management",
+        "Value": "Attack mitigation"
+    },
+    {
+        "SID_EID": "0x8428",
+        "EventText": "The platform OS recovery process was started by the firmware.",
+        "Category": "HP Sure Recover",
+        "Value": "Recovery initiated"
+    },
+    {
+        "SID_EID": "0x8429",
+        "EventText": "The platform OS recovery process has successfully completed.",
+        "Category": "HP Sure Recover",
+        "Value": "Recovery success"
+    },
+    {
+        "SID_EID": "0x842a",
+        "EventText": "The platform OS recovery process failed to complete successfully.",
+        "Category": "HP Sure Recover",
+        "Value": "Recovery failure"
+    },
+    {
+        "SID_EID": "0x8520",
+        "EventText": "HP Sure Start determined that the Secure Boot Keys were invalid and based on the recovery policy they have NOT been repaired.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x8521",
+        "EventText": "The Secure Boot Keys have been repaired at the request of the user.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x8522",
+        "EventText": "HP Sure Start determined that the Secure Boot Keys were invalid and they have been repaired automatically based on policy.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x8525",
+        "EventText": "HP Sure Start has detected the Intel Management Engine (ME) is unable to start and has initiated the recovery process using an ME recovery firmware image stored on local disk or external recovery media.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x8527",
+        "EventText": "HP Sure Start was unable to recover the Intel Management Engine firmware.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x852A",
+        "EventText": "BIOS was unable to locate Intel management engine firmware binary needed to restore Intel management engine firmware ",
+        "Category": "HP Sure Start",
+        "Value": "Recovery failure"
+    },
+    {
+        "SID_EID": "0x861E",
+        "EventText": "The HP Sure Start EpSC has found an integrity problem with the backup copy of Intel CSME bootloader firmware; the Intel CSME bootloader firmware integrity checking / recovery capability is no longer available.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x861F",
+        "EventText": "The HP Sure Start EpSC has found an integrity issue with the Intel CSME bootloader firmware.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x8621",
+        "EventText": "The HP Sure Start EpSC has performed a recovery of the Intel CSME bootloader firmware and Intel CSME factory configuration. Administrative action may be required to ensure that all Intel CSME provided services are configured as desired.",
+        "Category": "HP Sure Start",
+        "Value": "Revert to default"
+    },
+    {
+        "SID_EID": "0x8622",
+        "EventText": "The HP Sure Start EpSC detected that the system was unable to boot successfully after an Intel CSME firmware update; an attempt will be made to restore Intel CSME firmware.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x8623",
+        "EventText": "HP Sure Start detected that the Intel CSME firmware file system (Intel CSME configuration) is corrupted; an attempt will be made to restore Intel CSME firmware and configuration to last known good state.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x8624",
+        "EventText": "HP Sure Start detected that the Intel CSME failed to complete the boot initialization sequence immediately after the Intel CSME firmware update operation; an attempt will be made to restore Intel CSME firmware and configuration to last known good state.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery failure"
+    },
+    {
+        "SID_EID": "0x8625",
+        "EventText": "HP Sure Start has detected the Intel Management Engine (ME) is unable to start and has initiated the recovery process using an ME recovery firmware image stored on local disk or external recovery media.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery"
+    },
+    {
+        "SID_EID": "0x8626",
+        "EventText": "HP Sure Start has detected that the Intel CSME is in a disabled state due to corruption within the Intel CSME data region.",
+        "Category": "HP Sure Start",
+        "Value": "Policy violation"
+    },
+    {
+        "SID_EID": "0x8627",
+        "EventText": "HP Sure Start unable to recover the Intel CSME firmware.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery failure"
+    },
+    {
+        "SID_EID": "0x8628",
+        "EventText": "Intel CSME firmware update operation attempted by HP Sure Start failed due to error returned by Intel CSME firmware update interface.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery failure"
+    },
+    {
+        "SID_EID": "0x862A",
+        "EventText": "HP Sure Start was unable to locate Intel CSME firmware binary needed to restore Intel CSME firmware.",
+        "Category": "HP Sure Start",
+        "Value": "Recovery failure"
+    },
+    {
+        "SID_EID": "0x862B",
+        "EventText": "Intel CSME capsule update firmware package that was provided to HP Sure Start has failed the digital signature verification.",
+        "Category": "HP Sure Start",
+        "Value": "Integrity violation"
+    },
+    {
+        "SID_EID": "0x862e",
+        "EventText": "HP Sure Start EpSC detected an unauthorized Intel CSME state transition to manufacturing mode",
+        "Category": "HP Sure Start",
+        "Value": "Policy violation"
+    },
+    {
+        "SID_EID": "0x871E",
+        "EventText": "HP DMA Protection was unable to activate protection against malicious hardware impacting system operation.",
+        "Category": "HP Sure Start",
+        "Value": "Policy violation"
+    },
+    {
+        "SID_EID": "0x871F",
+        "EventText": "HP DMA Protection - A device attempted to access memory that it was not allowed to access.",
+        "Category": "HP Sure Start",
+        "Value": "Illegal DMA Blocked"
+    },
+    {
+        "SID_EID": "0x881E",
+        "EventText": "HP Sure Admin - An attempt was made to access the system locally and an incorrect PIN was entered multiple times resulting in the system forcing a reboot.",
+        "Category": "HP Sure Admin",
+        "Value": "Power off due to failure authentication"
+    },
+    {
+        "SID_EID": "0x881F",
+        "EventText": "HP Sure Admin - An attempt to change a firmware setting using Enhanced BOS Authentication Mode was made with an invalid signature.",
+        "Category": "HP Sure Admin",
+        "Value": "WMI blocked due to failed authentication"
+    },
+    {
+        "SID_EID": "0x891E",
+        "EventText": "HP EpSC runtime intrusion detection - HP BIOS detected/blocked an illegal attempt to access the HP EpSC trusted interface from the OS.",
+        "Category": "HP Sure Start",
+        "Value": "EpSC execution halted"
+    },
+    {
+        "SID_EID": "0x891F",
+        "EventText": "HP EpSC runtime intrusion detection - HP EpSC detected/blocked an illegal attempt to access the HP EpSC trusted interface from the OS.",
+        "Category": "HP Sure Start",
+        "Value": "EpSC execution halted"
+    },
+    {
+        "SID_EID": "0x8920",
+        "EventText": "HP EpSC runtime intrusion detection - An illegal attempt to write to EpSC code region of memory was detected and blocked.",
+        "Category": "HP Sure Start",
+        "Value": "EpSC execution halted"
+    },
+    {
+        "SID_EID": "0x8921",
+        "EventText": "HP EpSC runtime intrusion detection - An illegal attempt to execute from an EpSC data region of memory was detected and blocked.",
+        "Category": "HP Sure Start",
+        "Value": "EpSC execution halted"
+    },
+    {
+        "SID_EID": "0x8A1E",
+        "EventText": "HP Tamper Lock - The system detected that the cover was opened.",
+        "Category": "HP TamperLock",
+        "Value": "Cover removed"
+    },
+    {
+        "SID_EID": "0x8A20",
+        "EventText": "HP Tamper Lock - The TPM was cleared due to cover removal based on current HP Tamper Lock policy settings",
+        "Category": "HP TamperLock",
+        "Value": "TPM cleared based on Policy"
+    }
+]
