@@ -154,7 +154,7 @@ class Firmware {
 
         foreach ($fwEvent in $fwEvents) {
             # SID_EID is bytes 8 + 9 of raw event data 
-            $sid_eid = "0x" + $fwEvent.raw_event_data.Substring(24, 5) -replace '[:]', ''
+            $sid_eid = "0x" + $fwEvent.'raw event data'.Substring(24, 5) -replace '[:]', ''
 
             if (!$sid_eid) {
                 Write-Log ERROR "Raw event data corrupt in FW event log."
