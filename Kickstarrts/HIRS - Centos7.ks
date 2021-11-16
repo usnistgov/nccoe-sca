@@ -133,14 +133,7 @@ devtoolset-9
 %post
 
 
-#============================= Update certs +==================================#
 
-
-curl -o /etc/pki/ca-trust/source/anchors/curl-cacert.pem http://10.151.48.100/curl-cacert.pem
-curl -o /etc/pki/ca-trust/source/anchors/isrg-root-x1.pem http://10.151.48.100/isrg-root-x1.pem
-curl -o /etc/pki/ca-trust/source/anchors/root-ca-x3.pem http://10.151.48.100/root-ca-x3.pem
-
-update-ca-trust
 
 
 cat <<EOF >/etc/issue
@@ -152,6 +145,15 @@ EOF
 cat >> /etc/hosts <<EOF
 10.32.50.169 hirs-aca.sca.lab.nccoe.org
 EOF
+
+#============================= Update certs +==================================#
+
+
+curl -o /etc/pki/ca-trust/source/anchors/curl-cacert.pem http://hirs-aca.sca.lab.nccoe.org/curl-cacert.pem
+curl -o /etc/pki/ca-trust/source/anchors/isrg-root-x1.pem http://hirs-aca.sca.lab.nccoe.org/isrg-root-x1.pem
+curl -o /etc/pki/ca-trust/source/anchors/root-ca-x3.pem http://hirs-aca.sca.lab.nccoe.org/root-ca-x3.pem
+
+update-ca-trust
 
 cd /root/
 curl http://hirs-aca.sca.lab.nccoe.org/eclypsium_agent_builder-2.8.1.run -o /root/eclypsium_agent_builder-2.8.1.run
