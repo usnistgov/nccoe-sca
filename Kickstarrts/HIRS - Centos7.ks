@@ -10,22 +10,16 @@ clearpart --all --initlabel
 autopart --type=lvm --encrypted --passphrase=password
 bootloader --location=mbr --append="net.ifnames=0 biosdevname=0"
 
-#bootloader --location=mbr
-#part /boot --fstype ext4 --size=2048
-#part swap  --asprimary   --size=2048
-#part /     --fstype ext4 --size=1 --grow
 
 
-#network --bootproto=static --device=eth0 --ip=10.151.48.230 --netmask=255.255.255.0 --gateway=10.151.48.2 --noipv6
 network --bootproto=dhcp --device=link --noipv6 --hostname=hirs-provisioner-pxe
 
 auth --useshadow  --passalgo=sha512
-#rootpw --iscrypted $6$DjDtms3NRugYYVBG$YPXxAS1Ox7lL34r6Y0qV8RywwHNdN5cI53qx6L0xxwF7lanwTQ88lU1m32pF1TAqM2mySTCs/WQb4U9xid7mb1
 rootpw --iscrypted $6$JmD9RUuedb1wjOpM$AU2nxPEf5E237.SuqnelpxsXUjNjknMtJXZM6pLzuIzE8JZ6dkIwhdly.2h/p8sFu0OOdzY/3FLqAB71eVHnw1 
 
 selinux --disabled
 firewall --enabled --service=dhcp --port=32400:tcp,5001:udp,5201:udp
-services --enabled="dhcpd" --disabled="sshd,wpa_supplicant"
+services --enabled="dhcpd" --disabled="wpa_supplicant"
 
 %addon com_redhat_kdump --disabled
 %end
@@ -37,23 +31,19 @@ profile = pci-dss
 
 #============================= Package Selection ==============================#
 
-repo --name="base" --baseurl=http://mirror.centos.org/centos/7/os/x86_64/
-repo --name="updates" --baseurl=http://mirror.centos.org/centos/7/updates/x86_64/
-repo --name="extra" --baseurl=http://mirror.centos.org/centos/7/extras/x86_64/
-repo --name="epel" --baseurl=http://mirror.mrjester.net/fedora/epel/7/x86_64/
-#repo --name=elrepo-kernel --baseurl=http://elrepo.org/linux/kernel/el7/x86_64/
-#repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el7/x86_64/
-#repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el7/x86_64/
-# Added local repo here for HIRS Provisioner RPMs
-repo --name="hirs" --baseurl=file:///root/sca-packages
+# Using local proxy to cache RPMs
+
+repo --name="sca" --baseurl=file:////root/centos7/sca-packages 
+repo --name="base" --baseurl=http://mirror.centos.org/centos/7/os/x86_64/ --proxy=http://localhost:3128
+repo --name="updates" --baseurl=http://mirror.centos.org/centos/7/updates/x86_64/ --proxy=http://localhost:3128
+repo --name="extra" --baseurl=http://mirror.centos.org/centos/7/extras/x86_64/ --proxy=http://localhost:3128
+repo --name=epel --baseurl=http://dl.fedoraproject.org/pub/epel/7/x86_64/ --proxy=http://localhost:3128
+repo --name=centos-sclo --baseurl=http://mirror.centos.org/centos/7/sclo/x86_64/rh --proxy=http://localhost:3128
 
 
-%packages --excludedocs --multilib --instLangs en_US
+%packages --excludedocs --multilib --instLangs en_US --ignoremissing 
 
 @core
-@security-tools
-@system-admin-tools
-@development
 
 # Newer kernel
 kernel-ml
@@ -76,11 +66,7 @@ grub2-tools*
 shim-x64
 
 # Guest Utilities (Only One)
-#qemu-guest-agent
 open-vm-tools
-#kernel
-#kernel-devel
-#kernel-headers
 
 
 vim
@@ -88,7 +74,6 @@ java
 openssl
 paccor-1.1.4-5
 HIRS_Provisioner_TPM_2_0-2.0.2
-#hipxe-drivers-1.0-1
 
 log4cplus
 protobuf
@@ -98,44 +83,47 @@ wget
 procps
 openssh-server
 
+centos-release-scl
+devtoolset-9
+
 # Exclude Packages (Slim Image)
--abrt*
--aic94xx-firmware
--alsa-*
--audit
--authselect*
--avahi*
--a*firmware*
--biosdevname
--centos-logos
--chrony
--cracklib*
--dhclient
--dracut-config-rescue
--geolite2-*
--i*firmware*
--iwl*
--initscripts
--iprutils
+#-abrt*
+#-aic94xx-firmware
+#-alsa-*
+#-audit
+#-authselect*
+#-avahi*
+#-a*firmware*
+#-biosdevnam
+#-centos-logos
+#-chrony
+#-cracklib*
+#-dhclient
+#-dracut-config-rescue
+#-geolite2-*
+#-i*firmware*
+#-iwl*
+#-initscripts
+#-iprutils
 -kernel-tools
--kexec-tools
--lib*firmware*
--libxkbcommon
--lshw
--openldap
--parted
--plymouth
--postfix
--rdma*
+#-kexec-tools
+#-lib*firmware*
+#-libxkbcommon
+#-lshw
+#-openldap
+#-parted
+#-plymouth
+#-postfix
+#-rdma*
 -*rhn*
--sg3_utils*
--*spacewalk*
--sqlite
--sssd*
--subs*
--trousers
--tuned
--wpa_supplicant
+#-sg3_utils*
+#-*spacewalk*
+#-sqlite
+#-sssd*
+#-subs*
+#-trousers
+#-tuned
+#-wpa_supplicant
 
 %end
 
@@ -144,14 +132,6 @@ openssh-server
 
 %post
 
-#============================= Update kernel ==================================#
-#sudo rpm --import http://10.151.48.100/RPM-GPG-KEY-elrepo.org
-#sudo rpm -Uvh http://10.151.48.100/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
-#sudo yum -y --enablerepo=elrepo-kernel install kernel-ml
-
-#https://curl.se/ca/cacert.pem
-#https://letsencrypt.org/certs/isrg-root-x1-cross-signed.pem
-#https://crt.sh/?d=8395
 
 #============================= Update certs +==================================#
 
@@ -162,13 +142,6 @@ curl -o /etc/pki/ca-trust/source/anchors/root-ca-x3.pem http://10.151.48.100/roo
 
 update-ca-trust
 
-#============================= Get gcc 9 ==================================#
-yum -y install centos-release-scl
-yum -y install devtoolset-9-gcc
-scl enable devtoolset-9 bash
-
-
-#============================= Pre-Login Message ==============================#
 
 cat <<EOF >/etc/issue
                           Computing Device Acceptance Testing 
@@ -181,13 +154,8 @@ cat >> /etc/hosts <<EOF
 EOF
 
 cd /root/
-curl http://10.151.48.100/eclypsium.run -o /root/eclypsium.run
-
-curl http://hirs-aca.sca.lab.nccoe.org/DellEMC-iDRACTools.tar -o /root/DellEMC-iDRACTools.tar
-tar -xf DellEMC-iDRACTools.tar
-pushd iDRACTools/scv
-sh install_scv.sh
-popd
+curl http://hirs-aca.sca.lab.nccoe.org/eclypsium_agent_builder-2.8.1.run -o /root/eclypsium_agent_builder-2.8.1.run
+chmod +x /root/eclypsium_agent_builder-2.8.1.run
 
 cat >> /etc/systemd/system/tpm2-abrmd <<EOF
 [Unit]
@@ -263,14 +231,10 @@ yum -C clean all
     /var/log/anaconda \
     /var/lib/rhsm
 
-#=================================== Update hostname =============================#
-ProductName=`dmidecode --string='system-product-name'`
-SerialNumber=`dmidecode --string='system-serial-number'`
-
-echo "Changing hostname to $SerialNumber$ProductName"
-hostnamectl set-hostname "$SerialNumber$ProductName"
 
 #=================================== Download script =============================#
 curl http://hirs-aca.sca.lab.nccoe.org/provision.sh -o /root/provision.sh
-curl http://hirs-aca.sca.lab.nccoe.org/hipxe-drivers-1.0-1.noarch.rpm -o hipxe-drivers.rpm
+rpm -ihv http://hirs-aca.sca.lab.nccoe.org/hipxe-drivers-1.0-1.noarch.rpm
+chmod +x /root/provision.sh
+
 %end
