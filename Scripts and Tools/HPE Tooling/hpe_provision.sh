@@ -1,9 +1,9 @@
 #!/bin/bash
 
-hpe_script="./platform_verification.sh"
+hpe_script="./platform_verification_CentOS8.sh"
 collator_host="collator.lab.nccoe.org"
 collator_path="/api/upload"
-manifest_file="tmp/HPE_hardware_manifest.json"
+manifest_file="/opt/hpe/scl/HPE_hardware_manifest.json"
 
 # Script to scan and register computing device in the Eclypsium service from Centos7 network boot environment
 
@@ -15,7 +15,7 @@ VMWARE="VMware Virtual Platform"
 
 UUID=`dmidecode -s system-uuid`
 if [ "$ProductName" != "$VMWARE" ]; then
-	echo "$ProductName detected"
+        echo "$ProductName detected"
 else
         echo "VM detected, skipping Eclypsium registration"
 fi
@@ -32,4 +32,3 @@ fi
 
 echo "Pushing system and component data to collator..."
 curl -F "jsonFile=@$manifest_file" -F "UUID=$UUID" -F "type=HPE" http://$collator_host$collator_path
-
