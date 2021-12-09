@@ -264,7 +264,12 @@ class Utility {
 
         $msg = "Saving report to: {0}" -f $eventLogPath
         Write-Log INFO $msg
-        $report | ConvertTo-Json -Depth 8 -Compress > $eventLogPath 
+        #$report | ConvertTo-Json -Depth 8 -Compress > $eventLogPath
+
+        $jsonReport = $report | ConvertTo-Json -Depth 8 -Compress
+        $jsonReport | Out-File $eventLogPath
+        
+        Write-EventLog -LogName Application -Source "HPSCA" -EventID 3001 -EntryType Information -Message $jsonReport -Category 1 
     }
 
     # Delete Events directory and previous timestamps
