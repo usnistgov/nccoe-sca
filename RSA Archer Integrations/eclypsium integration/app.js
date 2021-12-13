@@ -33,8 +33,8 @@ const testingModeTokens = {
 
 const testingModeParams = {
   url: "https://demo-0124.eclypsium.cloud/api/v1",
-  client_id: "3vs6DAjqZEqE3g",
-  client_secret: "oKGTw3iv8GxzG0AakB_-RQ--ppcAmiTJYUhG6XJ6",
+  client_id: "",
+  client_secret: "",
   ignoreLastRunTime: "true",
 };
 
