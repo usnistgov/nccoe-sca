@@ -1,4 +1,3 @@
-========
 Overview
 ========
 
@@ -16,13 +15,11 @@ on laptop (sometimes referred to by industry as client) computing devices. It al
 the operational usage of manufacturers’ tools that may be useful to your IT personnel who verify that
 the computing device is acceptable to receive into the acquiring organization.
 
--------------------------
 Download and Installation
 -------------------------
 
 Follow the procedures as outlined in 1800-34 Volume C. This README will be updated if any major changes occur.
 
--------
 Support
 -------
 
