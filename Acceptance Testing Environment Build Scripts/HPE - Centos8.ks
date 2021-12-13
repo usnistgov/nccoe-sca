@@ -6,10 +6,10 @@ repo --name="AppStream" --baseurl="http://mirror.rackspace.com/centos/8/AppStrea
 skipx
 selinux --disabled
 
-#rootpw --iscrypted $6$JmD9RUuedb1wjOpM$AU2nxPEf5E237.SuqnelpxsXUjNjknMtJXZM6pLzuIzE8JZ6dkIwhdly.2h/p8sFu0OOdzY/3FLqAB71eVHnw1
 rootpw --iscrypted $6$SALT$LzA4I7R7EERO5XfvDLGBuCovbT2dBLNOtNeeGrGg1IaZD86doZkyOxxuIh2Wu8W6IIKf.WszM0FeOgLAgZIVG1
 
-user --name='tsmith' --password='P@ssw0rd123456!' --plaintext
+# Fill in password below if desired.
+user --name='tsmith' --password='' --plaintext
 
 
 %packages --ignoremissing --multilib --instLangs en_US
