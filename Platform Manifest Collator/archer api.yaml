@@ -1,0 +1,78 @@
+openapi: 3.0.3
+info:
+  title: Archer Web API
+  description: An API to convert JSON to XML for Archer consumption
+  version: 1.0.0
+  contact: {}
+servers:
+  - url: http://localhost:3001/api
+    description: Archer API
+components:
+  schemas:
+    UploadRequest:
+      type: object
+      properties:
+        jsonFile:
+          type: string
+          description: XML input as either file or string
+          example: ''
+        assetType:
+          type: string
+          description: Type of asset represented by the jsonFile
+          example: Dell
+        UUID:
+          type: string
+          description: UUID, where not included in the translation
+          example: 123e4567-e89b-12d3-a456-426614174000
+    APIErrorResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: If the call was successful or not
+          example: false
+        message:
+          type: string
+          description: Error message
+          example: Invalid request
+    APISuccessResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: If the call was successful or not
+          example: true
+paths:
+  /data:
+    get:
+      description: Get all stored XML data
+      operationId: getData
+      parameters: []
+      responses:
+        '200':
+          description: XML data was obtained
+          content:
+            text/xml: {}
+  /upload:
+    post:
+      description: Upload JSON file
+      operationId: uploadJson
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UploadRequest'
+      responses:
+        '200':
+          description: JSON uploaded and converted successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APISuccessResponse'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/APIErrorResponse'

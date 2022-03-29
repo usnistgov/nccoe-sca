@@ -1,0 +1,319 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "HP SCA configuration report",
+    "description": "Output format for HP's SCA data collection",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "OEM differentiator",
+            "type": "string"
+        },
+        "uuid": {
+            "description": "Device's UUID",
+            "type": "string"
+        },
+        "data": {
+            "type": "object",
+            "properties": {
+                "Variables": {
+                    "description": "UEFI configuration variables",
+                    "type": "object",
+                    "properties": {
+                        "FW_RIPD": {
+                            "type": "object",
+                            "properties": {
+                                "Value": {
+                                    "type": "string"
+                                },
+                                "Name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "Cover_Sensor": {
+                            "type": "object",
+                            "properties": {
+                                "Value": {
+                                    "type": "string"
+                                },
+                                "Name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "SS_GPT_HDD": {
+                            "type": "object",
+                            "properties": {
+                                "Value": {
+                                    "type": "string"
+                                },
+                                "Name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "PreBoot_DMA": {
+                            "type": "object",
+                            "properties": {
+                                "Value": {
+                                    "type": "string"
+                                },
+                                "Name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "DMA_Protection": {
+                            "type": "object",
+                            "properties": {
+                                "Value": {
+                                    "type": "string"
+                                },
+                                "Name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "TL_Clear_TPM": {
+                            "type": "object",
+                            "properties": {
+                                "Value": {
+                                    "type": "string"
+                                },
+                                "Name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "TL_Power_Off": {
+                            "type": "object",
+                            "properties": {
+                                "Value": {
+                                    "type": "string"
+                                },
+                                "Name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "SS_GPT_Policy": {
+                            "type": "object",
+                            "properties": {
+                                "Value": {
+                                    "type": "string"
+                                },
+                                "Name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "SS_SB_KeyProt": {
+                            "type": "object",
+                            "properties": {
+                                "Value": {
+                                    "type": "string"
+                                },
+                                "Name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "SS_SB_KeyProt",
+                        "FW_RIPD",
+                        "TL_Power_Off",
+                        "TL_Clear_TPM",
+                        "SS_GPT_HDD",
+                        "SS_GPT_Policy",
+                        "DMA_Protection",
+                        "PreBoot_DMA",
+                        "Cover_Sensor"
+                    ]
+                },
+                "Events": {
+                    "description": "Firmware events from HP Endpoint Security Controller",
+                    "type": "object",
+                    "properties": {
+                        "Sys_Config": {
+                            "description": "System Configuration event category",
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "array",
+                                "description": "Array of entries for a specific type of event in this category",
+                                "items": {
+                                    "type": "object",
+                                    "description": "Event entry",
+                                    "properties": {
+                                        "Timestamp": {
+                                            "type": "string"
+                                        },
+                                        "Message": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "HP_Sure_Start": {
+                            "description": "HP Sure Start event category",
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "array",
+                                "description": "Array of entries for a specific type of event in this category",
+                                "items": {
+                                    "type": "object",
+                                    "description": "Event entry",
+                                    "properties": {
+                                        "Timestamp": {
+                                            "type": "string"
+                                        },
+                                        "Message": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "HP_Sure_Recover": {
+                            "description": "HP Sure Recover event category",
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "array",
+                                "description": "Array of entries for a specific type of event in this category",
+                                "items": {
+                                    "type": "object",
+                                    "description": "Event entry",
+                                    "properties": {
+                                        "Timestamp": {
+                                            "type": "string"
+                                        },
+                                        "Message": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "HP_SPM": {
+                            "description": "Secure Platform Management event category",
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "array",
+                                "description": "Array of entries for a specific type of event in this category",
+                                "items": {
+                                    "type": "object",
+                                    "description": "Event entry",
+                                    "properties": {
+                                        "Timestamp": {
+                                            "type": "string"
+                                        },
+                                        "Message": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "HP_DMA": {
+                            "description": "HP DMA Protection event category",
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "array",
+                                "description": "Array of entries for a specific type of event in this category",
+                                "items": {
+                                    "type": "object",
+                                    "description": "Event entry",
+                                    "properties": {
+                                        "Timestamp": {
+                                            "type": "string"
+                                        },
+                                        "Message": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "HP_Tamper_Lock": {
+                            "description": "HP Tamper Lock event category",
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "array",
+                                "description": "Array of entries for a specific type of event in this category",
+                                "items": {
+                                    "type": "object",
+                                    "description": "Event entry",
+                                    "properties": {
+                                        "Timestamp": {
+                                            "type": "string"
+                                        },
+                                        "Message": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "HP_RID": {
+                            "description": "HP Runtime Intrusion Detection event category",
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "array",
+                                "description": "Array of entries for a specific type of event in this category",
+                                "items": {
+                                    "type": "object",
+                                    "description": "Event entry",
+                                    "properties": {
+                                        "Timestamp": {
+                                            "type": "string"
+                                        },
+                                        "Message": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "HP_Sure_Admin": {
+                            "description": "HP Sure Admin event category",
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "array",
+                                "description": "Array of entries for a specific type of event in this category",
+                                "items": {
+                                    "type": "object",
+                                    "description": "Event entry",
+                                    "properties": {
+                                        "Timestamp": {
+                                            "type": "string"
+                                        },
+                                        "Message": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "Prev_Timestamp": {
+                            "description": "Last timestamp from previous report",
+                            "type": "string"
+                        },
+                        "Last_Timestamp": {
+                            "description": "Timestamp of the last event",
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "required": [
+                "Variables",
+                "Events"
+            ]
+        }
+    },
+    "required": [
+        "type",
+        "data"
+    ]
+}

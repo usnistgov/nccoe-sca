@@ -1,0 +1,4 @@
+set dist-root ${live-images}/hpe_provisioner
+kernel ${dist-root}/vmlinuz0 rootflags=loop initrd=initrd0.img root=live:/hpeiso.iso rootfstype=auto ro rd.live.image quiet  rhgb rd.luks=0 rd.md=0 rd.dm=0
+initrd ${dist-root}/initrd0.img
+boot

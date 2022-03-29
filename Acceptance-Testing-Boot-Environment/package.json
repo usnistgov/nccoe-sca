@@ -1,0 +1,12 @@
+{
+  "name": "acceptance.testing.boot-environment",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "swagger-ui-express": "^4.3.0"
+  }
+}

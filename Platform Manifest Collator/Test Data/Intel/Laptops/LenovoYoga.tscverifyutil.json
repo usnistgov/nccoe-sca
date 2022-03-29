@@ -1,0 +1,176 @@
+{
+"_rev=": 3,
+"Header": {
+   "SystemSN": "PF1614WK",
+   "Manufacturer": "LENOVO",
+   "Model": "80Y7",
+   "DateTime": "May 16, 2021 12:10",
+   "OEM": "LENOVO",
+   "ODM": "LENOVO"
+},
+"EKCertSerialNumber": "EK Not Supported",
+"PCRs": {
+   "PCR0": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR1": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR2": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR3": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR4": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR5": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR6": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR7": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR8": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR9": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR10": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR11": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR12": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR13": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR14": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR15": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR16": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR17": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR18": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR19": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR20": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR21": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR22": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR23": "0000000000000000000000000000000000000000000000000000000000000000"
+},
+"TYPE0BIOS": {
+   "Vendor": "LENOVO",
+   "Version": "5NCN41WW",
+   "ReleaseDate": "2018-09-12"
+},
+"TYPE1System": {
+   "Manufacturer": "LENOVO",
+   "SerialNumber": "PF1614WK",
+   "ProductName": "80Y7",
+   "Version": "Lenovo YOGA 920-13IKB",
+   "UUID": "224fadcd-9c9f-e811-b5f5-8c1645ed181e",
+   "SKU": "LENOVO_MT_80Y7_BU_idea_FM_YOGA 920-13IKB",
+   "Family": "YOGA 920-13IKB"
+},
+"TYPE2Baseboards": {
+   "TYPE2Baseboard0": {
+      "Manufacturer": "LENOVO",
+      "SerialNumber": "PF1614WK",
+      "Version": "SDK0R32862 WIN",
+      "Product": "LNVNB161216",
+      "AssetTag": "NO Asset Tag",
+      "BoardType": "Motherboard (includes processor, memory, and I/O)"
+   }
+},
+"TYPE3Chassis": {
+   "TYPE3Chassis0": {
+      "Manufacturer": "LENOVO",
+      "SerialNumber": "PF1614WK",
+      "Version": "Lenovo YOGA 920-13IKB",
+      "AssetTag": "NO Asset Tag",
+      "Type": "Convertible",
+      "BootUpState": "Safe"
+   }
+},
+"TYPE4Processors": {
+   "TYPE4Processor0": {
+      "Socket": "U3E1",
+      "Manufacturer": "Intel(R) Corporation",
+      "PartNumber": "To Be Filled By O.E.M.",
+      "SerialNumber": "To Be Filled By O.E.M.",
+      "Version": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
+      "AssetTag": "To Be Filled By O.E.M.",
+      "ID": "EA060800FFFBEBBF",
+      "Type": ""
+   }
+},
+"TYPE17MemoryDevices": {
+   "TYPE17MemoryDevice0": {
+      "Manufacturer": "Micron",
+      "Size": "8192",
+      "Type": "DDR4",
+      "SerialNumber": "00000000",
+      "Device": "ChannelA-DIMM0",
+      "Bank": "BANK 0",
+      "AssetTag": "9876543210",
+      "PartNumber": ""
+   },
+   "TYPE17MemoryDevice1": {
+      "Manufacturer": "Micron",
+      "Size": "8192",
+      "Type": "DDR4",
+      "SerialNumber": "00000000",
+      "Device": "ChannelB-DIMM0",
+      "Bank": "BANK 2",
+      "AssetTag": "9876543210",
+      "PartNumber": ""
+   }
+},
+"TYPE22PortableBatteries": {
+   "TYPE22PortableBattery0": {
+      "Location": "Fake",
+      "Manufacturer": "-Virtual Battery 0-",
+      "ManufactureDate": "2010-08-08",
+      "SerialNumber": "Battery 0",
+      "Name": "CRB Battery 0"
+   }
+},
+"TYPE24HardwareSecurity": {
+   "PowerOnPassword": "Disabled",
+   "KeyboardPassword": "Disabled",
+   "AdministratorPassword": "Disabled",
+   "FrontPanelPassword": "Disabled"
+},
+"ComponentIdentifiers": {
+   "ComponentIdentifier0": {
+      "componentClassID": "00070002",
+      "componentName": "",
+      "componentManufacturer": "",
+      "componentModel": "SAMSUNG MZVLB1T0HALR-000L2",
+      "componentType": "Nvme",
+      "componentSerial": "0025_388B_7102_94F1.",
+      "componentRevision": "4L1QEXA7",
+      "componentManufacturerId": "",
+      "fieldReplaceable": "false",
+      "componentProperties": {
+         "Property": "Capacity",
+         "Value": "953.86"
+      }
+   },
+   "ComponentIdentifier1": {
+      "componentClassID": "000E000A",
+      "componentName": "Enhanced (101- or 102-key)",
+      "componentManufacturer": "",
+      "componentModel": "Standard PS/2 Keyboard",
+      "componentType": "",
+      "componentSerial": "ACPI-IDEA0100-4-146000F5-0",
+      "componentRevision": "",
+      "componentManufacturerId": "",
+      "fieldReplaceable": "false",
+      "componentAddress": {
+         "Type": "",
+         "Value": ""
+      },
+      "componentProperties": {
+         "Property": "",
+         "Value": ""
+      }
+   },
+   "ComponentIdentifier2": {
+      "componentClassID": "00090003",
+      "componentName": "",
+      "componentManufacturer": "Qualcomm Atheros Communications Inc.",
+      "componentModel": "Qualcomm Atheros QCA61x4A Wireless Network Adapter",
+      "componentType": "",
+      "componentSerial": "PCI-VEN_168C-DEV_003E-SUBSYS_082717AA-REV_32-4-36704B5D-0-00E4",
+      "componentRevision": "",
+      "componentManufacturerId": "",
+      "fieldReplaceable": "false",
+      "componentAddress": {
+         "Type": "2.23.133.17.2",
+         "Value": "50:5B:C2:FB:BF:A3"
+      },
+      "componentProperties": {
+         "Property": "",
+         "Value": ""
+      }
+   },
+}
+}

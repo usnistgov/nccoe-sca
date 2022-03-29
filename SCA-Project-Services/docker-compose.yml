@@ -1,0 +1,34 @@
+version: "3.8"
+services:
+    acceptance-testing-boot-environment:
+        build:
+            context: ./acceptance-testing-boot-environment
+        ports:
+            - "3002:3001"
+    archer-api:
+        build:
+            context: ./archer-api
+        ports:
+            - "3001:3001"       
+    aca:
+      build:
+          context: hirs-aca
+      container_name: hirs-aca1
+      ports:
+         - "8443:8443"
+      entrypoint: /bin/bash -c
+      command: [/root/setup_aca.sh]
+      hostname: ${HIRS_ACA_HOSTNAME}
+    nginx:
+        restart: always
+        build:
+            context: ./nginx-proxy
+        ports:
+            - "80:80"
+            - "443:443"
+        depends_on:
+            - "aca"
+            - "acceptance-testing-boot-environment"
+            - "archer-api"
+        volumes:
+            - ./nginx-proxy/certs:/etc/nginx/certs

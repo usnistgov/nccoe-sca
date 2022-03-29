@@ -1,0 +1,626 @@
+{
+    "Dell Platform Certificate Profile Version" : "1.0",
+    "Dell Product Line" : "PowerEdge",
+    "Description" : "Dell Platform Certificate Profile for PowerEdge Servers",
+    "PlatformCertificateExtensions" : 
+    {
+        "CertificateType" : "2.23.133.8.4",
+        "PlatformCertificateType" : "2.23.133.2.25",
+        "PlatformConfigurationVersion" : "2.23.133.5.1.7.2",
+        "PlatformSpecification" : "2.23.133.2.19"
+    },
+    "PlatformConfiguration" : 
+    {
+        "ComponentDetails" : 
+        [
+            {
+                "Baseboard" : 
+                [
+                    {
+                        "Manufacturer" : "Dell Inc.",
+                        "Model" : "0JDN4V",
+                        "SMBIOS Handle" : "0200",
+                        "Serial" : ".GJFBVD3.CNIVC0013M0078.",
+                        "Version" : "A00"
+                    }
+                ]
+            },
+            {
+                "Processor" : 
+                [
+                    {
+                        "Manufacturer" : "Intel",
+                        "Model" : "B3",
+                        "SMBIOS Handle" : "0400",
+                        "Serial" : "Unknown",
+                        "Socket Designation" : "CPU1",
+                        "Version" : "Intel(R) Xeon(R) Gold 6330 CPU @ 2.00GHz"
+                    },
+                    {
+                        "Manufacturer" : "Intel",
+                        "Model" : "B3",
+                        "SMBIOS Handle" : "0401",
+                        "Serial" : "Unknown",
+                        "Socket Designation" : "CPU2",
+                        "Version" : "Intel(R) Xeon(R) Gold 6330 CPU @ 2.00GHz"
+                    }
+                ]
+            },
+            {
+                "OEM" : 
+                [
+                    {
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "Processor Serial" : "17[FFFFFFFFFFFFFFFF],17[FFFFFFFFFFFFFFFF]",
+                        "SMBIOS Handle" : "0B00",
+                        "Serial" : "Unknown",
+                        "Version" : "Unknown"
+                    }
+                ]
+            },
+            {
+                "Memory" : 
+                [
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A1",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1100",
+                        "Serial" : "357FD47C",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A2",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1101",
+                        "Serial" : "357FD1CB",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A3",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1102",
+                        "Serial" : "357FD45D",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A4",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1103",
+                        "Serial" : "357FD1C7",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A5",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1104",
+                        "Serial" : "357FD1EE",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A6",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1105",
+                        "Serial" : "357FD47B",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A7",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1106",
+                        "Serial" : "357FD47D",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A8",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1107",
+                        "Serial" : "357FD1C9",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A9",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1108",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A10",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1109",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A11",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "110A",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A12",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "110B",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A13",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "110C",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A14",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "110D",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A15",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "110E",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "A16",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "110F",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B1",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1110",
+                        "Serial" : "357FD1C8",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B2",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1111",
+                        "Serial" : "357FD462",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B3",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1112",
+                        "Serial" : "44965907",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B4",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1113",
+                        "Serial" : "357FD460",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B5",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1114",
+                        "Serial" : "357FD202",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B6",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1115",
+                        "Serial" : "357FD1E7",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B7",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1116",
+                        "Serial" : "357FD1F9",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "012115D1",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B8",
+                        "Manufacturer" : "00AD063200AD",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1117",
+                        "Serial" : "357FD44C",
+                        "Speed" : "0C80",
+                        "Type" : "1A",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B9",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1118",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B10",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "1119",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B11",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "111A",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B12",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "111B",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B13",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "111C",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B14",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "111D",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B15",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "111E",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Asset Tag" : "Unknown",
+                        "Extended Size" : "00000000",
+                        "Locator" : "B16",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "Unknown",
+                        "SMBIOS Handle" : "111F",
+                        "Serial" : "Unknown",
+                        "Speed" : "0000",
+                        "Type" : "02",
+                        "Version" : "Unknown"
+                    }
+                ]
+            },
+            {
+                "PowerSupply" : 
+                [
+                    {
+                        "Location" : "PSU.Slot.1",
+                        "Manufacturer" : "DELL",
+                        "Model" : "PWR SPLY,1400W,RDNT,LTON",
+                        "Serial" : "CNLOD001263ACE",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Location" : "PSU.Slot.2",
+                        "Manufacturer" : "DELL",
+                        "Model" : "PWR SPLY,1400W,RDNT,LTON",
+                        "Serial" : "CNLOD001263F39",
+                        "Version" : "Unknown"
+                    }
+                ]
+            },
+            {
+                "HardDrive" : 
+                [
+                    {
+                        "FQDD" : "Disk.Bay.0:Enclosure.Internal.0-1:RAID.SL.3-1",
+                        "Manufacturer" : "INTEL",
+                        "Media Type" : "SSD",
+                        "Model" : "SSDSC2KG019T8R",
+                        "Part Number" : "TW055J8HPIHIT12101UAA04",
+                        "Serial" : "PHYG103300NR1P9DGN",
+                        "Size" : "1787.875 GB",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "FQDD" : "Disk.Bay.1:Enclosure.Internal.0-1:RAID.SL.3-1",
+                        "Manufacturer" : "INTEL",
+                        "Media Type" : "SSD",
+                        "Model" : "SSDSC2KG019T8R",
+                        "Part Number" : "TW055J8HPIHIT12101Z2A04",
+                        "Serial" : "PHYG103300MQ1P9DGN",
+                        "Size" : "1787.875 GB",
+                        "Version" : "Unknown"
+                    }
+                ]
+            },
+            {
+                "Network" : 
+                [
+                    {
+                        "Location" : "NIC.Slot.1-1-1",
+                        "MAC Address" : "B4:96:91:B3:3D:B2",
+                        "Manufacturer" : "Intel Corp",
+                        "Model" : "Intel(R) Ethernet 25G 2P E810",
+                        "Serial" : "Unknown",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Location" : "NIC.Slot.1-2-1",
+                        "MAC Address" : "B4:96:91:B3:3D:B3",
+                        "Manufacturer" : "Intel Corp",
+                        "Model" : "Intel(R) Ethernet 25G 2P E810",
+                        "Serial" : "Unknown",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Location" : "NIC.Slot.2-1-1",
+                        "MAC Address" : "B4:96:91:B3:41:44",
+                        "Manufacturer" : "Intel Corp",
+                        "Model" : "Intel(R) Ethernet 25G 2P E810",
+                        "Serial" : "Unknown",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Location" : "NIC.Slot.2-2-1",
+                        "MAC Address" : "B4:96:91:B3:41:45",
+                        "Manufacturer" : "Intel Corp",
+                        "Model" : "Intel(R) Ethernet 25G 2P E810",
+                        "Serial" : "Unknown",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Location" : "NIC.Integrated.1-1-1",
+                        "MAC Address" : "68:05:CA:C7:52:04",
+                        "Manufacturer" : "Intel Corp",
+                        "Model" : "Intel(R) Ethernet 1G 4P I350",
+                        "Serial" : "Unknown",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Location" : "NIC.Integrated.1-2-1",
+                        "MAC Address" : "68:05:CA:C7:52:05",
+                        "Manufacturer" : "Intel Corp",
+                        "Model" : "Intel(R) Ethernet 1G 4P I350",
+                        "Serial" : "Unknown",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Location" : "NIC.Integrated.1-3-1",
+                        "MAC Address" : "68:05:CA:C7:52:06",
+                        "Manufacturer" : "Intel Corp",
+                        "Model" : "Intel(R) Ethernet 1G 4P I350",
+                        "Serial" : "Unknown",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Location" : "NIC.Integrated.1-4-1",
+                        "MAC Address" : "68:05:CA:C7:52:07",
+                        "Manufacturer" : "Intel Corp",
+                        "Model" : "Intel(R) Ethernet 1G 4P I350",
+                        "Serial" : "Unknown",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Location" : "NIC.Embedded.1-1-1",
+                        "MAC Address" : "70:B5:E8:F0:28:0A",
+                        "Manufacturer" : "Broadcom Corp",
+                        "Model" : "Broadcom Gigabit Ethernet BCM5720",
+                        "Serial" : "Unknown",
+                        "Version" : "Unknown"
+                    },
+                    {
+                        "Location" : "NIC.Embedded.2-1-1",
+                        "MAC Address" : "70:B5:E8:F0:28:0B",
+                        "Manufacturer" : "Broadcom Corp",
+                        "Model" : "Broadcom Gigabit Ethernet BCM5720",
+                        "Serial" : "Unknown",
+                        "Version" : "Unknown"
+                    }
+                ]
+            },
+            {
+                "iDRAC" : 
+                [
+                    {
+                        "MAC Address" : "b0:7b:25:d0:d8:ca",
+                        "Manufacturer" : "Unknown",
+                        "Model" : "15G Monolithic",
+                        "Serial" : "GJFBVD3",
+                        "Version" : "Unknown",
+                        "iDRAC Identity Cert" : "MIIDSTCCAu+gAwIBAgIIAwAAAAAjDTowCgYIKoZIzj0EAwIwdTELMAkGA1UEBhMCQ04xETAPBgNVBAgMCFNoYW5naGFpMREwDwYDVQQHDAhTaGFuZ2hhaTERMA8GA1UECgwISW52ZW50ZWMxDTALBgNVBAsMBFBST0QxHjAcBgNVBAMMFTBJVkMwMC1DRTBDLTEwNUUtNjgyNjAeFw0yMTAzMjUwMTUwMDdaFw00MDA1MjQwMTUwMDdaMHExCzAJBgNVBAYTAlVTMQ4wDAYDVQQIDAVUZXhhczETMBEGA1UEBwwKUm91bmQgUm9jazERMA8GA1UECgwIRGVsbCBFTUMxDjAMBgNVBAsMBUlEUkFDMRowGAYDVQQDDBFiMDo3YjoyNTpkMDpkODpjYTCCAUswggEDBgcqhkjOPQIBMIH3AgEBMCwGByqGSM49AQECIQD/////AAAAAQAAAAAAAAAAAAAAAP///////////////zBbBCD/////AAAAAQAAAAAAAAAAAAAAAP///////////////AQgWsY12Ko6k+ez671VdpiGvGUdBrDMU7D2O848PifSYEsDFQDEnTYIhucEk2pmeOETnSa3gZ9+kARBBGsX0fLhLEJH+Lzm5WOkQPJ3A32BLeszoPShOUXYmMKWT+NC4v4af5uO5+tKfA+eFivOM1drMV7Oy7ZAaDe/UfUCIQD/////AAAAAP//////////vOb6racXnoTzucrC/GMlUQIBAQNCAASfQYGDFnXVaFvx84yFitgIycE5YL6NY7d9b2CLXTyF1DW3sSutn4Fe+JGVzRkgcuEavjuLEduD7Vhe/oF5TrNNo3kwdzAJBgNVHRMEAjAAMAsGA1UdDwQEAwIF4DAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwHQYDVR0OBBYEFKVxjTYIPwa+JLw4MDj26vR3xYp5MB8GA1UdIwQYMBaAFNNBEtgtMohX0j2F73PJVRzK1hgxMAoGCCqGSM49BAMCA0gAMEUCIH0OzbJ1aX8ATMxIJ955hPZgPgE3nuMgR4TYd18KTvX5AiEAp4wrHNPVrE6DSkBqC3Bdl2RvjgQcvkO5iSyakK25AeQ="
+                    }
+                ]
+            },
+            {
+                "TPM" : 
+                [
+                    {
+                        "Manufacturer" : "id:4E544300",
+                        "Model" : "NPCT75x",
+                        "Public Key Algorithm" : "rsaEncryption",
+                        "Serial" : "30AD2CBE7C2C7AC0B622",
+                        "Version" : "id:00070002"
+                    }
+                ]
+            }
+        ]
+    },
+    "SubjectAltName" : 
+    [
+        {
+            "Manufacturer" : "Dell Inc.",
+            "OID" : "2.23.133.5.1.1"
+        },
+        {
+            "Model" : "PowerEdge R650",
+            "OID" : "2.23.133.5.1.4"
+        },
+        {
+            "OID" : "2.23.133.5.1.5",
+            "Version" : "Unknown"
+        },
+        {
+            "OID" : "2.23.133.5.1.6",
+            "Serial" : "GJFBVD3"
+        }
+    ]
+}

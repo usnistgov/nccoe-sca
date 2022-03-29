@@ -1,0 +1,48 @@
+XXX.XXX.XXX.XXX - - [14/Oct/2021:19:49:24 +0000] "GET /boot.ipxe?uuid=4c4c4544-004a-4610-8042-c7c04f564433&mac=70%3Ab5%3Ae8%3Af0%3A28%3A0a&busid=01%3A14%3Ae4%3A16%3A5f&ip=10.151.48.234&hostname=&serial=GJFBVD3&asset=&manufacturer=Dell%20Inc.&product=PowerEdge%20R650 HTTP/1.1" 404 492 "-" "iPXE/1.21.1+ (ge09e1)"
+
+Dell Server Request:
+
+{ manufacturer: 'Dell Inc.', product: 'PowerEdge R650' }
+
+HPE Server Request:
+
+ {
+   uuid: '39373638-3935-584d-5131-3034304e4d32',
+   mac: '94:40:c9:45:80:2c',
+  busid: '01:14:e4:16:57',
+   ip: 'XXX.XXX.XXX.XXX',
+   hostname: '',
+   serial: 'MXQ1040NM2',
+   asset: '                                ',
+  manufacturer: 'HPE',
+ product: 'ProLiant DL360 Gen10'
+ }
+
+
+Dell Laptop (dell-4)
+
+2021-10-27T17:42:59: {
+2021-10-27T17:42:59:   uuid: '4c4c4544-0039-3710-8036-c8c04f394a33',
+2021-10-27T17:42:59:   mac: 'd0:8e:79:db:02:70',
+2021-10-27T17:42:59:   busid: '01:80:86:15:fb',
+2021-10-27T17:42:59:   ip: 'XXX.XXX.XXX.XXX',
+2021-10-27T17:42:59:   hostname: '',
+2021-10-27T17:42:59:   serial: 'H9769J3',
+2021-10-27T17:42:59:   asset: '',
+2021-10-27T17:42:59:   manufacturer: 'Dell Inc.',
+2021-10-27T17:42:59:   product: 'Latitude 5420'
+2021-10-27T17:42:59: }
+
+ 2021-10-27T18:03:33: {
+2021-10-27T18:03:33:   uuid: 'c06593cb-e07c-10dc-9bc8-54c2bf608a25',
+2021-10-27T18:03:33:   mac: 'c4:41:1e:76:f5:a5',
+2021-10-27T18:03:33:   busid: '01:80:86:15:ec',
+2021-10-27T18:03:33:   ip: 'XXX.XXX.XXX.XXX',
+2021-10-27T18:03:33:   hostname: '',
+2021-10-27T18:03:33:   serial: '5CG03681XB',
+2021-10-27T18:03:33:   asset: '5CG03681XB',
+2021-10-27T18:03:33:   manufacturer: 'HP',
+2021-10-27T18:03:33:   product: 'HP EliteBook 840 G7 Notebook PC'
+2021-10-27T18:03:33: }
+
+

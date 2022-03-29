@@ -1,0 +1,10 @@
+[submodule "archer-api"]
+	path = archer-api
+	url = ssh://git@git.codev.mitre.org/hrot/archer-api.git
+[submodule "acceptance-testing-boot-environment"]
+	path = acceptance-testing-boot-environment
+	url = ssh://git@git.codev.mitre.org/hrot/acceptance-testing-boot-environment.git
+[submodule "hirs-aca"]
+	path = hirs-aca
+	url = ssh://git@git.codev.mitre.org/hrot/hirs-aca.git
+	branch = main

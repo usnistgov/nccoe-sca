@@ -1,0 +1,23 @@
+<Device>
+   <Manufacturer/>
+   <Make_and_Model/>
+   <Serial_Number/>
+   <Product_Name/>
+   <UUID>15747800-8111-11e4-906e-0012795d96dd</UUID>
+   <Components>
+      <Component>
+         <Class>Hard Drive</Class>
+         <Manufacturer>Seagate</Manufacturer>
+         <Model>ST18000NM005J</Model>
+         <Serial>ZR5056HD0000C107GP5G</Serial>
+         <Revision>ET02</Revision>
+         <Version/>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Free_Text>/dev/sg1</Free_Text>
+         <Device>15747800-8111-11e4-906e-0012795d96dd</Device>
+      </Component>
+   </Components>
+</Device>

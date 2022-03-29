@@ -1,0 +1,10 @@
+<SeagateDriveFirmwareHash>
+   <UUID>f9264ab8-f279-40db-8c3f-f1414728b683</UUID>
+   <signing_auth_key_cert_hash>0x3518a52553f4e12913f07f6c3071a900e77ad13d0ce42f457e8a994c3651f55f</signing_auth_key_cert_hash>
+   <see_signing_auth_key_cert_hash>0xebbb859d34258ed737edb228f0e7d5d78d5adafa1eb41b636a4788e6c1667cc3</see_signing_auth_key_cert_hash>
+   <bfw_itcm_hash>0x57f600ed539cde6484867dc79e87863217e1ff928ebbf81318b6b41df70f05a4</bfw_itcm_hash>
+   <bfw_idba_hash>0x2da357684285d99d2d4d34f3d2d97b8131f08cceaf135e47f73a5bfe657cc3c7</bfw_idba_hash>
+   <servo_fw_hash>0xd61919aaf533c6add39133a1e16f5bb2281a312a5777b9dfb3f9ecc0b92e55b2</servo_fw_hash>
+   <cfw_hash>0x0ee87a62c4242e79ed9e65de716acddecd87ce6f91a4cd1099b881dcf760b3d0</cfw_hash>
+   <see_fw_hash>0x0feefc2b216b5ed97a8d19ec28d0e1b55fe2c40a2d6251ba6f2d838237c6ad5b</see_fw_hash>
+</SeagateDriveFirmwareHash>
