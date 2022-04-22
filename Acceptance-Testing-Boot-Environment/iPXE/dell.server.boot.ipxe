@@ -1,0 +1,5 @@
+kernel ${live-images}/wimboot
+initrd ${live-images}/winpe_dell/media/Boot/BCD                     BCD
+initrd ${live-images}/winpe_dell/media/Boot/boot.sdi                boot.sdi
+initrd ${live-images}/winpe_dell/media/sources/boot.wim             boot.wim
+boot

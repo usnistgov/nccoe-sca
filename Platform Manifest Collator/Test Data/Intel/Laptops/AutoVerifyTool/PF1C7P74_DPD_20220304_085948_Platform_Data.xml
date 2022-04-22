@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectPlatformData ver="3">
+        <Header>
+              <SystemSN>PF1C7P74</SystemSN>
+              <Manufacturer>LENOVO</Manufacturer>
+              <Model>20L5S1S000</Model>
+              <DateTime>2022-03-04T08:59:48</DateTime>
+              <OEM>LENOVO</OEM>
+              <ODM>LENOVO</ODM>
+        </Header>
+        <EKCertSerialNumber>49249A12</EKCertSerialNumber>
+        <PCRs>
+              <PCR id="0">BC23FB2A5554FA5B56DE8D82C0C98229FD44EC4F13141C1C0A4603FC4E8BB465</PCR>
+              <PCR id="1">BC54728A9BA2B96B148DF89595CF04DABD2D156DE9DD1CB4E2860C3DC2DB253F</PCR>
+              <PCR id="2">3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969</PCR>
+              <PCR id="3">3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969</PCR>
+              <PCR id="4">B178275C2AFFEDBB4D4D154C85CCD57137897BD97B3E72FE0E235D1DC1D4AEFA</PCR>
+              <PCR id="5">56ECBE0B8BC75F1D47DB2CF4B12597CFC23C7985544125B07DA7878D44762DA1</PCR>
+              <PCR id="6">3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969</PCR>
+              <PCR id="7">48D7C7F9D3EE6D1A8A0FB7995162AAECD00EBB9D05BE790701D4EEEC8DF8519E</PCR>
+              <PCR id="8">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+              <PCR id="9">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+              <PCR id="10">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+              <PCR id="11">0FE6E8F2110D5D53935C9E7D6F6BF722598B550595AABDC6E4FD2ECDF310F980</PCR>
+              <PCR id="12">20DB5DAF84712A7A1A0FDDCC2F417B58DA8CAAF35E4F76468F575BB13287899B</PCR>
+              <PCR id="13">2A31119EAF2B3AD2AC7D29CB8190BC2D21A08D1C09ADB3AADDB549B73F1430F4</PCR>
+              <PCR id="14">D264653ECAC902736394EEEFE8D5913D5617D2ED659B36189EB968FC5C4380C0</PCR>
+              <PCR id="15">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+              <PCR id="16">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+              <PCR id="17">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</PCR>
+              <PCR id="18">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</PCR>
+              <PCR id="19">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</PCR>
+              <PCR id="20">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</PCR>
+              <PCR id="21">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</PCR>
+              <PCR id="22">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</PCR>
+              <PCR id="23">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+        </PCRs>
+        <TYPE0BIOS>
+              <Vendor>LENOVO</Vendor>
+              <Version>N24ET56W (1.31 )</Version>
+              <ReleaseDate>2020-02-19</ReleaseDate>
+        </TYPE0BIOS>
+        <TYPE1System>
+              <Manufacturer>LENOVO</Manufacturer>
+              <SerialNumber>PF1C7P74</SerialNumber>
+              <ProductName>20L5S1S000</ProductName>
+              <Version>ThinkPad T480</Version>
+              <UUID>cc86c530-1025-b211-a85c-f3dd5f26b170</UUID>
+              <SKU>LENOVO_MT_20L5_BU_Think_FM_ThinkPad T480</SKU>
+              <Family>ThinkPad T480</Family>
+        </TYPE1System>
+        <TYPE2Baseboards>
+              <TYPE2Baseboard id="0">
+                   <Manufacturer>LENOVO</Manufacturer>
+                   <SerialNumber>L1HF01400P4</SerialNumber>
+                   <Version>SDK0J40700 WIN</Version>
+                   <Product>20L5S1S000</Product>
+                   <AssetTag>Not Available</AssetTag>
+                   <BoardType>Motherboard (includes processor, memory, and I/O)</BoardType>
+              </TYPE2Baseboard>
+        </TYPE2Baseboards>
+        <TYPE3Chassis>
+              <TYPE3Chassis id="0">
+                   <Manufacturer>LENOVO</Manufacturer>
+                   <SerialNumber>PF1C7P74</SerialNumber>
+                   <Version>None</Version>
+                   <AssetTag>No Asset Information</AssetTag>
+                   <Type>Notebook</Type>
+                   <BootUpState>Unknown</BootUpState>
+              </TYPE3Chassis>
+        </TYPE3Chassis>
+        <TYPE4Processors>
+              <TYPE4Processor id="0">
+                   <Socket>U3E1</Socket>
+                   <Manufacturer>Intel(R) Corporation</Manufacturer>
+                   <PartNumber>None</PartNumber>
+                   <SerialNumber>None</SerialNumber>
+                   <Version>Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz</Version>
+                   <AssetTag>None</AssetTag>
+                   <ID>EA060800FFFBEBBF</ID>
+                   <Type>Central Processor</Type>
+              </TYPE4Processor>
+        </TYPE4Processors>
+        <TYPE17MemoryDevices>
+              <TYPE17MemoryDevice id="0">
+                   <Manufacturer>0443</Manufacturer>
+                   <Size>8192</Size>
+                   <Type>DDR4</Type>
+                   <SerialNumber>116B3E52</SerialNumber>
+                   <Device>ChannelA-DIMM0</Device>
+                   <Bank>BANK 0</Bank>
+                   <AssetTag>None</AssetTag>
+                   <PartNumber>RMSA3260ME78HAF-2666</PartNumber>
+              </TYPE17MemoryDevice>
+        </TYPE17MemoryDevices>
+        <TYPE22PortableBatteries>
+              <TYPE22PortableBattery id="0">
+                   <Location>Front</Location>
+                   <Manufacturer>LGC</Manufacturer>
+                   <ManufactureDate>0000-00-00</ManufactureDate>
+                   <SerialNumber></SerialNumber>
+                   <Name>01AV489</Name>
+              </TYPE22PortableBattery>
+              <TYPE22PortableBattery id="1">
+                   <Location>Rear</Location>
+                   <Manufacturer>Celxpert</Manufacturer>
+                   <ManufactureDate>0000-00-00</ManufactureDate>
+                   <SerialNumber></SerialNumber>
+                   <Name>01AV424</Name>
+              </TYPE22PortableBattery>
+        </TYPE22PortableBatteries>
+        <TYPE24HardwareSecurity>
+              <Settings>
+                   <PowerOnPassword>Disabled</PowerOnPassword>
+                   <KeyboardPassword>Not Implemented</KeyboardPassword>
+                   <AdministratorPassword>Disabled</AdministratorPassword>
+                   <FrontPanelPassword>Not Implemented</FrontPanelPassword>
+              </Settings>
+        </TYPE24HardwareSecurity>
+        <ComponentIdentifiers>
+              <ComponentIdentifier>
+                   <componentClassID>0x00070002</componentClassID>
+                   <componentName></componentName>
+                   <componentManufacturer></componentManufacturer>
+                   <componentModel>INTEL SSDPEKKF512G8L</componentModel>
+                   <componentType>Nvme</componentType>
+                   <componentSerial>5CD2_E429_9140_BAE5.</componentSerial>
+                   <componentRevision>L14P</componentRevision>
+                   <componentManufacturerId></componentManufacturerId>
+                   <fieldReplaceable>false</fieldReplaceable>
+                   <componentProperties>
+                         <Property>Capacity</Property>
+                         <Value>476.94</Value>
+                   </componentProperties>
+              </ComponentIdentifier>
+              <ComponentIdentifier>
+                   <componentClassID>0x000E0006</componentClassID>
+                   <componentName>Synaptics Pointing Device</componentName>
+                   <componentManufacturer>Synaptics</componentManufacturer>
+                   <componentModel>Synaptics Pointing Device</componentModel>
+                   <componentType></componentType>
+                   <componentSerial>ACPI\LEN0093\4-38781700-0</componentSerial>
+                   <componentRevision></componentRevision>
+                   <componentManufacturerId></componentManufacturerId>
+                   <fieldReplaceable>false</fieldReplaceable>
+                   <componentAddress>
+                         <addressType></addressType>
+                         <addressValue></addressValue>
+                   </componentAddress>
+                   <componentProperties>
+                         <Property></Property>
+                         <Value></Value>
+                   </componentProperties>
+              </ComponentIdentifier>
+              <ComponentIdentifier>
+                   <componentClassID>0x000E000A</componentClassID>
+                   <componentName>Enhanced (101- or 102-key)</componentName>
+                   <componentManufacturer></componentManufacturer>
+                   <componentModel>Standard PS/2 Keyboard</componentModel>
+                   <componentType></componentType>
+                   <componentSerial>ACPI\LEN0071\4-38781700-0</componentSerial>
+                   <componentRevision></componentRevision>
+                   <componentManufacturerId></componentManufacturerId>
+                   <fieldReplaceable>false</fieldReplaceable>
+                   <componentAddress>
+                         <addressType></addressType>
+                         <addressValue></addressValue>
+                   </componentAddress>
+                   <componentProperties>
+                         <Property></Property>
+                         <Value></Value>
+                   </componentProperties>
+              </ComponentIdentifier>
+              <ComponentIdentifier>
+                   <componentClassID>0x00090002</componentClassID>
+                   <componentName></componentName>
+                   <componentManufacturer>Intel</componentManufacturer>
+                   <componentModel>Intel(R) Ethernet Connection (4) I219-V</componentModel>
+                   <componentType></componentType>
+                   <componentSerial>PCI\VEN_8086-DEV_15D8-SUBSYS_225D17AA-REV_21\3-11583659-1-FE</componentSerial>
+                   <componentRevision></componentRevision>
+                   <componentManufacturerId></componentManufacturerId>
+                   <fieldReplaceable>false</fieldReplaceable>
+                   <componentAddress>
+                         <addressType>2.23.133.17.1</addressType>
+                         <addressValue>F8:75:A4:7F:BE:6A</addressValue>
+                   </componentAddress>
+                   <componentProperties>
+                         <Property></Property>
+                         <Value></Value>
+                   </componentProperties>
+              </ComponentIdentifier>
+              <ComponentIdentifier>
+                   <componentClassID>0x00090003</componentClassID>
+                   <componentName></componentName>
+                   <componentManufacturer>Intel Corporation</componentManufacturer>
+                   <componentModel>Intel(R) Dual Band Wireless-AC 8265</componentModel>
+                   <componentType></componentType>
+                   <componentSerial>PCI\VEN_8086-DEV_24FD-SUBSYS_00108086-REV_78\C809A8FFFF4EE07600</componentSerial>
+                   <componentRevision></componentRevision>
+                   <componentManufacturerId></componentManufacturerId>
+                   <fieldReplaceable>false</fieldReplaceable>
+                   <componentAddress>
+                         <addressType>2.23.133.17.2</addressType>
+                         <addressValue>C8:09:A8:4E:E0:76</addressValue>
+                   </componentAddress>
+                   <componentProperties>
+                         <Property></Property>
+                         <Value></Value>
+                   </componentProperties>
+              </ComponentIdentifier>
+        </ComponentIdentifiers>
+</DirectPlatformData>

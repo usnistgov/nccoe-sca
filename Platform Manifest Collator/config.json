@@ -1,0 +1,30 @@
+{
+    "xmlOutputDirectory": "out",
+    "assetTypes": {
+        "Intel": "Intel",
+        "HIRS": "HIRS",
+        "HPE": "HPE",
+        "HPINC": "HP, Inc.",
+        "Dell": "Dell",
+        "Seagate.Component": "Seagate.Component",
+        "Seagate.FW.Attestation": "Seagate.FW.Attestation",
+        "Seagate.FW.Hash": "Seagate.FW.Hash",
+        "Intel.Server.XML": "Intel.Server.XML",
+        "Intel.Laptop": "Intel.Laptop",
+        "Intel.Laptop.XML": "Intel.Laptop.XML",
+        "Dell.Server": "Dell.Server",
+        "Dell.Laptop": "Dell.Laptop",
+        "HPINC.Dell.Laptop": "HPINC.Dell.Laptop"
+    },
+    "assetTypesUUIDFromUser": [
+        "HIRS",
+        "HPE",
+        "Dell",
+        "Seagate.Component",
+        "Seagate.FW.Attestation",
+        "Seagate.FW.Hash",
+        "Intel.Server.XML",
+        "Intel.Laptop.XML",
+        "Dell.Server"
+    ]
+}

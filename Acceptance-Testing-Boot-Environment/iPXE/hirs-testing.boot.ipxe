@@ -1,0 +1,4 @@
+set dist-root ${live-images}/provisioner_test
+kernel ${dist-root}/vmlinuz0 rootflags=loop initrd=initrd0.img root=hirs.iso rd.live.image rootfstype=auto ro quiet net.ifnames=0 biosdevname=0 rd.luks=0 rd.md=0 rd.dm=
+initrd ${dist-root}/initrd0.img
+boot

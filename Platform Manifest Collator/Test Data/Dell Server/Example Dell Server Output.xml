@@ -1,0 +1,243 @@
+<Device>
+   <Manufacturer>Dell Inc.</Manufacturer>
+   <Make_and_Model>PowerEdge R650</Make_and_Model>
+   <Serial_Number/>
+   <Product_Name>Unknown</Product_Name>
+   <UUID>f9264ab8-f279-40db-8c3f-f1414728b683</UUID>
+   <Components>
+      <Component>
+         <Class>CPU</Class>
+         <Manufacturer>Intel</Manufacturer>
+         <Model>B3</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Intel(R) Xeon(R) Gold 6330 CPU @ 2.00GHz</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>CPU</Class>
+         <Manufacturer>Intel</Manufacturer>
+         <Model>B3</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Intel(R) Xeon(R) Gold 6330 CPU @ 2.00GHz</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Memory</Class>
+         <Manufacturer>Intel</Manufacturer>
+         <Model>B3</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Intel(R) Xeon(R) Gold 6330 CPU @ 2.00GHz</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Memory</Class>
+         <Manufacturer>Intel</Manufacturer>
+         <Model>B3</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Intel(R) Xeon(R) Gold 6330 CPU @ 2.00GHz</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Storage Drive</Class>
+         <Manufacturer>INTEL</Manufacturer>
+         <Model>SSDSC2KG019T8R</Model>
+         <Serial>PHYG103300NR1P9DGN</Serial>
+         <Revision>TW055J8HPIHIT12101UAA04</Revision>
+         <Version>Unknown</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Storage Drive</Class>
+         <Manufacturer>INTEL</Manufacturer>
+         <Model>SSDSC2KG019T8R</Model>
+         <Serial>PHYG103300MQ1P9DGN</Serial>
+         <Revision>TW055J8HPIHIT12101Z2A04</Revision>
+         <Version>Unknown</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Network Interface Card</Class>
+         <Manufacturer>Intel Corp</Manufacturer>
+         <Model>Intel(R) Ethernet 25G 2P E810</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Unknown</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Network Interface Card</Class>
+         <Manufacturer>Intel Corp</Manufacturer>
+         <Model>Intel(R) Ethernet 25G 2P E810</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Unknown</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Network Interface Card</Class>
+         <Manufacturer>Intel Corp</Manufacturer>
+         <Model>Intel(R) Ethernet 25G 2P E810</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Unknown</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Network Interface Card</Class>
+         <Manufacturer>Intel Corp</Manufacturer>
+         <Model>Intel(R) Ethernet 25G 2P E810</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Unknown</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Network Interface Card</Class>
+         <Manufacturer>Intel Corp</Manufacturer>
+         <Model>Intel(R) Ethernet 1G 4P I350</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Unknown</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Network Interface Card</Class>
+         <Manufacturer>Intel Corp</Manufacturer>
+         <Model>Intel(R) Ethernet 1G 4P I350</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Unknown</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Network Interface Card</Class>
+         <Manufacturer>Intel Corp</Manufacturer>
+         <Model>Intel(R) Ethernet 1G 4P I350</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Unknown</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Network Interface Card</Class>
+         <Manufacturer>Intel Corp</Manufacturer>
+         <Model>Intel(R) Ethernet 1G 4P I350</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Unknown</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Network Interface Card</Class>
+         <Manufacturer>Broadcom Corp</Manufacturer>
+         <Model>Broadcom Gigabit Ethernet BCM5720</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Unknown</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Network Interface Card</Class>
+         <Manufacturer>Broadcom Corp</Manufacturer>
+         <Model>Broadcom Gigabit Ethernet BCM5720</Model>
+         <Serial>Unknown</Serial>
+         <Revision/>
+         <Version>Unknown</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>TPM</Class>
+         <Manufacturer>id:4E544300</Manufacturer>
+         <Model>NPCT75x</Model>
+         <Serial>30AD2CBE7C2C7AC0B622</Serial>
+         <Revision/>
+         <Version>id:00070002</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+      <Component>
+         <Class>Baseboard</Class>
+         <Manufacturer>Dell Inc.</Manufacturer>
+         <Model>0JDN4V</Model>
+         <Serial>.GJFBVD3.CNIVC0013M0078.</Serial>
+         <Revision/>
+         <Version>A00</Version>
+         <Field_Replaceable/>
+         <Addresses/>
+         <Platform_Certificate/>
+         <Platform_Certificate_URI/>
+         <Device>f9264ab8-f279-40db-8c3f-f1414728b683</Device>
+      </Component>
+   </Components>
+</Device>

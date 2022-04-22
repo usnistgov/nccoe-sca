@@ -1,0 +1,214 @@
+{
+	"uuid": "3206D7FA-D7D3-B406-DAF5-62D4C47D6D79",
+	"data": {
+		"Events": {
+			"HP_Sure_Recover": {
+                "Recovery initiated": [
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 2
+					}
+				],
+                "Recovery success": [
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 2
+					}
+				],
+                "Recovery failure": [
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 2
+					}
+				]
+            },
+			"HP_Sure_Start": {
+				"Integrity violation": [
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 2
+					}
+				],
+				"Policy violation": [
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 0
+					},
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 1
+					}
+				],
+                "Recovery": [
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 0
+					},
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 1
+					}
+				],
+                "Revert to default": [
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 0
+					},
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 1
+					}
+				],
+                "Attack mitigation": [
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 0
+					},
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 1
+					}
+				],
+                "SMM execution halted": [
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 0
+					},
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 1
+					}
+				],
+                "Illegal DMA Blocked": [
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 0
+					},
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 1
+					}
+				],
+                "EpSC execution halted": [
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 0
+					},
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 1
+					}
+				] 
+			},
+			"HP_Sure_Admin": {
+                "Power off due to failure authentication": [
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 0
+					},
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 1
+					}
+				],
+                "WMI blocked due to failed authentication": [
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 0
+					},
+					{
+						"Timestamp": "1/1/2000 12:00:00 AM",
+						"Message": 1
+					}
+				]
+            },
+			"Secure_Platform": {
+                "Management Attack mitigation": [
+					{
+						"Timestamp": "1/1/2019 12:00:07 AM",
+						"Message": 0
+					},
+					{
+						"Timestamp": "9/5/2020 12:46:59 PM",
+						"Message": 0
+					}
+				]
+            },
+			"Sys_Config": {
+				"Policy violation": [
+					{
+						"Timestamp": "1/1/2019 12:00:07 AM",
+						"Message": 0
+					},
+					{
+						"Timestamp": "9/5/2020 12:46:59 PM",
+						"Message": 0
+					}
+				]
+			},
+			"Last_Timestamp": "10/13/2021 11:03:14 AM",
+			"HP_TamperLock": {
+                "Cover removed": [
+					{
+						"Timestamp": "1/1/2019 12:00:07 AM",
+						"Message": 0
+					},
+					{
+						"Timestamp": "9/5/2020 12:46:59 PM",
+						"Message": 0
+					}
+				],
+                "TPM cleared based on Policy": [
+					{
+						"Timestamp": "1/1/2019 12:00:07 AM",
+						"Message": 0
+					},
+					{
+						"Timestamp": "9/5/2020 12:46:59 PM",
+						"Message": 0
+					}
+				]
+            },
+			"Prev_Timestamp": "1/1/0001 12:00:00 AM"
+		},
+		"Variables": {
+			"FW_RIPD": {
+				"Value": "Enable",
+				"Name": "Enhanced HP Firmware Runtime Intrusion Prevention and Detection"
+			},
+			"Cover_Sensor": {
+				"Value": "Not found",
+				"Name": "Cover Removal Sensor"
+			},
+			"SS_GPT_HDD": {
+				"Value": "Enabled",
+				"Name": "Save/Restore GPT of System Hard Drive"
+			},
+			"PreBoot_DMA": {
+				"Value": "All PCIe Devices",
+				"Name": "Pre-boot DMA protection"
+			},
+			"DMA_Protection": {
+				"Value": "Enable",
+				"Name": "DMA Protection"
+			},
+			"TL_Clear_TPM": {
+				"Value": "Not found",
+				"Name": "Clear TPM on boot after cover removal"
+			},
+			"TL_Power_Off": {
+				"Value": "Not found",
+				"Name": "Power Off Upon Cover Removal"
+			},
+			"SS_GPT_Policy": {
+				"Value": "Recover in event of corruption",
+				"Name": "Boot Sector (MBR/GPT) Recovery Policy"
+			},
+			"SS_SB_KeyProt": {
+				"Value": "Enable",
+				"Name": "Sure Start Secure Boot Keys Protection"
+			}
+		}
+	},
+	"type": "HPINC"
+}

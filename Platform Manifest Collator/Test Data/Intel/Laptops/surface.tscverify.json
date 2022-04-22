@@ -1,0 +1,138 @@
+{
+"_rev=": 3,
+"Header": {
+   "SystemSN": "027009345053",
+   "Manufacturer": "Microsoft Corporation",
+   "Model": "Surface Pro 3",
+   "DateTime": "May 16, 2021 12:16",
+   "OEM": "Microsoft Corporation",
+   "ODM": "Microsoft Corporation"
+},
+"EKCertSerialNumber": "260DC4EA",
+"PCRs": {
+   "PCR0": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR1": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR2": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR3": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR4": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR5": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR6": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR7": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR8": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR9": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR10": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR11": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR12": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR13": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR14": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR15": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR16": "0000000000000000000000000000000000000000000000000000000000000000",
+   "PCR17": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+   "PCR18": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+   "PCR19": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+   "PCR20": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+   "PCR21": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+   "PCR22": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+   "PCR23": "0000000000000000000000000000000000000000000000000000000000000000"
+},
+"TYPE0BIOS": {
+   "Vendor": "American Megatrends Inc.",
+   "Version": "3.11.2650",
+   "ReleaseDate": "2019-04-30"
+},
+"TYPE1System": {
+   "Manufacturer": "Microsoft Corporation",
+   "SerialNumber": "027009345053",
+   "ProductName": "Surface Pro 3",
+   "Version": "1",
+   "UUID": "230fe6b0-4c09-0e28-58e1-e4300e45fae6",
+   "SKU": "Surface_Pro_3",
+   "Family": "Surface"
+},
+"TYPE2Baseboards": {
+   "TYPE2Baseboard0": {
+      "Manufacturer": "Microsoft Corporation",
+      "SerialNumber": "027009345053",
+      "Version": "1",
+      "Product": "Surface Pro 3",
+      "AssetTag": "0",
+      "BoardType": "Motherboard (includes processor, memory, and I/O)"
+   }
+},
+"TYPE3Chassis": {
+   "TYPE3Chassis0": {
+      "Manufacturer": "Microsoft Corporation",
+      "SerialNumber": "027009345053",
+      "Version": "1",
+      "AssetTag": "MM212898",
+      "Type": "LapTop",
+      "BootUpState": "Safe"
+   }
+},
+"TYPE4Processors": {
+   "TYPE4Processor0": {
+      "Socket": "SOCKET 0",
+      "Manufacturer": "Intel(R) Corporation",
+      "PartNumber": "00",
+      "SerialNumber": "",
+      "Version": "Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz",
+      "AssetTag": "00",
+      "ID": "51060400FFFBEBBF",
+      "Type": ""
+   }
+},
+"TYPE17MemoryDevices": {
+   "TYPE17MemoryDevice0": {
+      "Manufacturer": "0000",
+      "Size": "4096",
+      "Type": "DDR3",
+      "SerialNumber": "00000000",
+      "Device": "ChannelA-DIMM0",
+      "Bank": "BANK 0",
+      "AssetTag": "",
+      "PartNumber": ""
+   }
+},
+"TYPE24HardwareSecurity": {
+   "PowerOnPassword": "Disabled",
+   "KeyboardPassword": "Disabled",
+   "AdministratorPassword": "Disabled",
+   "FrontPanelPassword": "Disabled"
+},
+"ComponentIdentifiers": {
+   "ComponentIdentifier0": {
+      "componentClassID": "00070002",
+      "componentName": "",
+      "componentManufacturer": "",
+      "componentModel": "SAMSUNG MZMTE256HMHP-000MV",
+      "componentType": "Sata",
+      "componentSerial": "S1F1NYAFB50740",
+      "componentRevision": "EXT41M0Q",
+      "componentManufacturerId": "",
+      "fieldReplaceable": "false",
+      "componentProperties": {
+         "Property": "Capacity",
+         "Value": "238.47"
+      }
+   },
+   "ComponentIdentifier1": {
+      "componentClassID": "00090003",
+      "componentName": "",
+      "componentManufacturer": "Marvell Semiconductor, Inc.",
+      "componentModel": "Marvell AVASTAR Wireless-AC Network Controller",
+      "componentType": "",
+      "componentSerial": "PCI-VEN_11AB-DEV_2B38-SUBSYS_045E0001-REV_00-4-379F07B2-0-00E0",
+      "componentRevision": "",
+      "componentManufacturerId": "",
+      "fieldReplaceable": "false",
+      "componentAddress": {
+         "Type": "2.23.133.17.2",
+         "Value": "4C:0B:BE:25:C6:7A"
+      },
+      "componentProperties": {
+         "Property": "",
+         "Value": ""
+      }
+   },
+}
+}

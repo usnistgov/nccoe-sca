@@ -1,0 +1,86 @@
+{
+    "type": "HPINC",
+    "uuid": "18C06F3D-44C9-490A-B6AC-AEE568DB8D8F",
+    "data": {
+        "Events": {
+            "HP_Sure_Recover": {},
+            "HP_RID": {},
+            "HP_Sure_Start": {
+                "Integrity violation": [
+                    {
+                        "Timestamp": "1/1/2000 12:00:01 AM",
+                        "Message": 0
+                    }
+                ],
+                "Revert to default": [
+                    {
+                        "Timestamp": "1/1/2000 12:00:00 AM",
+                        "Message": 0
+                    },
+                    {
+                        "Timestamp": "1/1/2000 12:00:00 AM",
+                        "Message": 1
+                    }
+                ],
+                "SMM execution halted": [
+                    {
+                        "Timestamp": "2/1/2021 6:10:13 PM",
+                        "Message": 0
+                    }
+                ]
+            },
+            "HP_Sure_Admin": {},
+            "HP_DMA": {},
+            "Sys_Config": {
+                "Policy violation": [
+                    {
+                        "Timestamp": "1/1/2020 12:00:11 AM",
+                        "Message": 0
+                    }
+                ]
+            },
+            "Last_Timestamp": "7/14/2021 3:16:27 PM",
+            "HP_SPM": {},
+            "HP_Tamper_Lock": {},
+            "Prev_Timestamp": "1/1/0001 12:00:00 AM"
+        },
+        "Variables": {
+            "FW_RIPD": {
+                "Value": "Enable",
+                "Name": "Enhanced HP Firmware Runtime Intrusion Prevention and Detection"
+            },
+            "Cover_Sensor": {
+                "Value": "Disable",
+                "Name": "Cover Removal Sensor"
+            },
+            "SS_GPT_HDD": {
+                "Value": "Disabled",
+                "Name": "Save/Restore GPT of System Hard Drive"
+            },
+            "PreBoot_DMA": {
+                "Value": "All PCIe Devices",
+                "Name": "Pre-boot DMA protection"
+            },
+            "DMA_Protection": {
+                "Value": "Enable",
+                "Name": "DMA Protection"
+            },
+            "TL_Clear_TPM": {
+                "Value": "Disable",
+                "Name": "Clear TPM on boot after cover removal"
+            },
+            "TL_Power_Off": {
+                "Value": "Disable",
+                "Name": "Power Off Upon Cover Removal"
+            },
+            "SS_GPT_Policy": {
+                "Value": "Local user control",
+                "Name": "Boot Sector (MBR/GPT) Recovery Policy"
+            },
+            "SS_SB_KeyProt": {
+                "Value": "Enable",
+                "Name": "Sure Start Secure Boot Keys Protection"
+            }
+        }
+    }
+}

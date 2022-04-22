@@ -1,0 +1,72 @@
+<record>
+{
+    
+    "PLATFORM": {
+        "PLATFORMMANUFACTURERSTR": "LENOVO","PLATFORMMODEL": "80Y7","PLATFORMVERSION": "Lenovo YOGA 920-13IKB","PLATFORMSERIAL": "PF1614WK"
+    },
+    "COMPONENTS": [
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00020001"
+    },"MANUFACTURER": "LENOVO","MODEL": "31","SERIAL": "PF1614WK","REVISION": "Lenovo YOGA 920-13IKB"
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00030003"
+    },"MANUFACTURER": "LENOVO","MODEL": "LNVNB161216","FIELDREPLACEABLE": "true","SERIAL": "PF1614WK","REVISION": "SDK0R32862 WIN"
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00130003"
+    },"MANUFACTURER": "LENOVO","MODEL": "Not Specified","REVISION": "5NCN41WW"
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00010002"
+    },"MANUFACTURER": "Intel(R) Corporation","MODEL": "198","FIELDREPLACEABLE": "true","SERIAL": "To Be Filled By O.E.M.","REVISION": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz"
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00060001"
+    },"MANUFACTURER": "Micron","MODEL": "Not Specified","FIELDREPLACEABLE": "true","SERIAL": "00000000","REVISION": "9876543210"
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00060001"
+    },"MANUFACTURER": "Micron","MODEL": "Not Specified","FIELDREPLACEABLE": "true","SERIAL": "00000000","REVISION": "9876543210"
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00090002"
+    },"MANUFACTURER": "168C","MODEL": "003E","FIELDREPLACEABLE": "true","SERIAL": "505BC2FBBFA3","REVISION": "32", "ADDRESSES": [{
+                "WLANMAC": "505BC2FBBFA3" }]
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00070002"
+    },"MANUFACTURER": "Not Specified","MODEL": "SAMSUNG MZVLB1T0","FIELDREPLACEABLE": "true","SERIAL": "0025_388B_7102_94F1."
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00050002"
+    },"MANUFACTURER": "8086","MODEL": "5917","FIELDREPLACEABLE": "true","REVISION": "07"
+        }
+    ],
+    "PROPERTIES": [
+        {
+            "NAME": "caption",
+            "VALUE": "Microsoft Windows 10 Home"
+        }
+
+    ]
+}
+</record>

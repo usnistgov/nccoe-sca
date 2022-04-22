@@ -1,0 +1,15 @@
+{
+   "Dell Inc.": {
+      "PowerEdge R650": "dell.server.boot.ipxe",
+      "PowerEdge R630": "dell.server.boot.ipxe",
+      "Precision 3530": "hirs-testing.boot.ipxe",
+      "Latitude 5420": "hirs-testing.boot.ipxe"
+   },
+   "HPE": {
+      "ProLiant DL360 Gen10": "hpe.boot.ipxe"
+   },
+   "HP": {
+      "HP EliteBook 840 G7 Notebook PC": "hirs-testing.boot.ipxe"
+   },
+   "default": "default.menu.ipxe"
+}

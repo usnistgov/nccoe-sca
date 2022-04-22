@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectPlatformData ver="3">
+        <Header>
+                <SystemSN>............</SystemSN>
+                <Manufacturer>Intel Corporation</Manufacturer>
+                <Model>S2600WTT</Model>
+                <DateTime>2022-02-11T13:21:06</DateTime>
+                <OEM>Unspecified</OEM>
+                <ODM>Unspecified</ODM>
+        </Header>
+        <EKCertSerialNumber>4734A10C</EKCertSerialNumber>
+        <PCRs>
+                <PCR id="0">49A2D61E1B99F40284AFB0C662C69A55646C23199725671188CF0E78003F141C</PCR>
+                <PCR id="1">09142574F210B6D952F01C1E7A8DED7D16F65F52949F7FB8FAB9AB6F0E312EF3</PCR>
+                <PCR id="2">213A7254DFE69EB92EF5AFB00329CC1077A83A135E18F99B0132881B91297977</PCR>
+                <PCR id="3">3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969</PCR>
+                <PCR id="4">3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969</PCR>
+                <PCR id="5">E14A3D062101C40AFD6175382021B8AEC9EE0413A4C9028B86716155EB4EE4DB</PCR>
+                <PCR id="6">3D458CFE55CC03EA1F443F1562BEEC8DF51C75E14A9FCF9A7234A13F198E7969</PCR>
+                <PCR id="7">65CAF8DD1E0EA7A6347B635D2B379C93B9A1351EDC2AFC3ECDA700E534EB3068</PCR>
+                <PCR id="8">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+                <PCR id="9">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+                <PCR id="10">347B6D0F8B5B1C03780DCF45E56902114E177F8F3A894AA9B05CB2F5F45A0F06</PCR>
+                <PCR id="11">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+                <PCR id="12">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+                <PCR id="13">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+                <PCR id="14">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+                <PCR id="15">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+                <PCR id="16">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+                <PCR id="17">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</PCR>
+                <PCR id="18">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</PCR>
+                <PCR id="19">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</PCR>
+                <PCR id="20">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</PCR>
+                <PCR id="21">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</PCR>
+                <PCR id="22">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</PCR>
+                <PCR id="23">0000000000000000000000000000000000000000000000000000000000000000</PCR>
+        </PCRs>
+        <TYPE0BIOS>
+                <Vendor>Intel Corporation</Vendor>
+                <Version>SE5C610.86B.01.01.1029.090220201031</Version>
+                <ReleaseDate>2020-09-02</ReleaseDate>
+        </TYPE0BIOS>
+        <TYPE1System>
+                <Manufacturer>Intel Corporation</Manufacturer>
+                <SerialNumber>............</SerialNumber>
+                <ProductName>S2600WTT</ProductName>
+                <Version>....................</Version>
+                <UUID>15747800-8111-11E4-906E-0012795D96DD</UUID>
+                <SKU>SKU Number</SKU>
+                <Family>Family</Family>
+        </TYPE1System>
+        <TYPE2Baseboards>
+                <TYPE2Baseboard id="0">
+                        <Manufacturer>Intel Corporation</Manufacturer>
+                        <SerialNumber>BQWL51650568</SerialNumber>
+                        <Version>G92187-350</Version>
+                        <Product>S2600WTT</Product>
+                        <AssetTag>Base Board Asset Tag</AssetTag>
+                        <BoardType>Motherboard</BoardType>
+                </TYPE2Baseboard>
+        </TYPE2Baseboards>
+        <TYPE3Chassis>
+                <TYPE3Chassis id="0">
+                        <Manufacturer>...............................</Manufacturer>
+                        <SerialNumber>..................</SerialNumber>
+                        <Version>..................</Version>
+                        <AssetTag>....................</AssetTag>
+                        <Type>Rack Mount Chassis</Type>
+                        <BootUpState>Safe</BootUpState>
+                </TYPE3Chassis>
+        </TYPE3Chassis>
+        <TYPE4Processors>
+                <TYPE4Processor id="0">
+                        <Socket>CPU1</Socket>
+                        <Manufacturer>Intel(R) Corporation</Manufacturer>
+                        <PartNumber/>
+                        <SerialNumber/>
+                        <Version>Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz</Version>
+                        <AssetTag/>
+                        <ID>F2060300FFFBEBBF</ID>
+                        <Type>Central Processor</Type>
+                </TYPE4Processor>
+                <TYPE4Processor id="1">
+                        <Socket>CPU2</Socket>
+                        <Manufacturer>Intel(R) Corporation</Manufacturer>
+                        <PartNumber/>
+                        <SerialNumber/>
+                        <Version>Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz</Version>
+                        <AssetTag/>
+                        <ID>F2060300FFFBEBBF</ID>
+                        <Type>Central Processor</Type>
+                </TYPE4Processor>
+        </TYPE4Processors>
+        <TYPE17MemoryDevices>
+                <TYPE17MemoryDevice id="0">
+                        <Manufacturer>Micron</Manufacturer>
+                        <Size>8192</Size>
+                        <Type>DDR4</Type>
+                        <SerialNumber>0F663371</SerialNumber>
+                        <Device>DIMM_A1</Device>
+                        <Bank>NODE 1</Bank>
+                        <AssetTag/>
+                        <PartNumber>18ASF1G72PZ-2G1A2</PartNumber>
+                </TYPE17MemoryDevice>
+                <TYPE17MemoryDevice id="1">
+                        <Manufacturer>Micron</Manufacturer>
+                        <Size>8192</Size>
+                        <Type>DDR4</Type>
+                        <SerialNumber>0F6633ED</SerialNumber>
+                        <Device>DIMM_C1</Device>
+                        <Bank>NODE 1</Bank>
+                        <AssetTag/>
+                        <PartNumber>18ASF1G72PZ-2G1A2</PartNumber>
+                </TYPE17MemoryDevice>
+                <TYPE17MemoryDevice id="2">
+                        <Manufacturer>Micron</Manufacturer>
+                        <Size>8192</Size>
+                        <Type>DDR4</Type>
+                        <SerialNumber>0F6633EE</SerialNumber>
+                        <Device>DIMM_E1</Device>
+                        <Bank>NODE 2</Bank>
+                        <AssetTag/>
+                        <PartNumber>18ASF1G72PZ-2G1A2</PartNumber>
+                </TYPE17MemoryDevice>
+                <TYPE17MemoryDevice id="3">
+                        <Manufacturer>Micron</Manufacturer>
+                        <Size>8192</Size>
+                        <Type>DDR4</Type>
+                        <SerialNumber>0F663370</SerialNumber>
+                        <Device>DIMM_G1</Device>
+                        <Bank>NODE 2</Bank>
+                        <AssetTag/>
+                        <PartNumber>18ASF1G72PZ-2G1A2</PartNumber>
+                </TYPE17MemoryDevice>
+        </TYPE17MemoryDevices>
+        <TYPE24HardwareSecurity>
+                <Settings>
+                        <PowerOnPassword>Not Implemented</PowerOnPassword>
+                        <KeyboardPassword>Not Implemented</KeyboardPassword>
+                        <AdministratorPassword>Disabled</AdministratorPassword>
+                        <FrontPanelPassword>Disabled</FrontPanelPassword>
+                </Settings>
+        </TYPE24HardwareSecurity>
+        <TYPE32SystemBootInformation>
+                <BootStatus>00</BootStatus>
+        </TYPE32SystemBootInformation>
+        <TYPE39SystemPowerSupplies>
+                <TYPE39SystemPowerSupply id="0">
+                        <Manufacturer>To Be Filled By O.E.M.</Manufacturer>
+                        <SerialNumber>To Be Filled By O.E.M.</SerialNumber>
+                        <AssetTag>To Be Filled By O.E.M.</AssetTag>
+                        <PartNumber>To Be Filled By O.E.M.</PartNumber>
+                        <Characteristic>To Be Filled By O.E.M.</Characteristic>
+                        <Watts>32768</Watts>
+                        <Hotplug>No</Hotplug>
+                        <Present>Yes</Present>
+                        <Unplugged>No</Unplugged>
+                        <voltRange>Unknown</voltRange>
+                        <Status>Unknown</Status>
+                        <Type>Unknown</Type>
+                </TYPE39SystemPowerSupply>
+        </TYPE39SystemPowerSupplies>
+        <ComponentIdentifiers>
+                <ComponentIdentifier>
+                        <componentClassID/>
+                        <componentName/>
+                        <componentManufacturer/>
+                        <componentModel/>
+                        <componentType/>
+                        <componentSerial/>
+                        <componentRevision/>
+                        <componentManufacturerId/>
+                        <fieldReplaceable/>
+                        <componentProperties>
+                                <Property>Capacity</Property>
+                                <Value/>
+                        </componentProperties>
+                </ComponentIdentifier>
+                <ComponentIdentifier>
+                        <componentClassID>0x00070002</componentClassID>
+                        <componentName>Storage Drive</componentName>
+                        <componentManufacturer>SEAGATE</componentManufacturer>
+                        <componentModel>ST18000NM005J</componentModel>
+                        <componentType>SCSI</componentType>
+                        <componentSerial>ZR5056HD0000C107GP5G</componentSerial>
+                        <componentRevision>ET02</componentRevision>
+                        <componentManufacturerId/>
+                        <fieldReplaceable>false</fieldReplaceable>
+                        <componentProperties>
+                                <Property>Capacity</Property>
+                                <Value>18.0 TB</Value>
+                        </componentProperties>
+                </ComponentIdentifier>
+                <ComponentIdentifier>
+                        <componentClassID>0x00070002</componentClassID>
+                        <componentName>Storage Drive</componentName>
+                        <componentManufacturer>SEAGATE</componentManufacturer>
+                        <componentModel>ST18000NM005J</componentModel>
+                        <componentType>SCSI</componentType>
+                        <componentSerial>ZR5056GS0000C105D6S3</componentSerial>
+                        <componentRevision>ET02</componentRevision>
+                        <componentManufacturerId/>
+                        <fieldReplaceable>false</fieldReplaceable>
+                        <componentProperties>
+                                                        <Property>Capacity</Property>
+                                <Value>18.0 TB</Value>
+                        </componentProperties>
+                </ComponentIdentifier>
+                <ComponentIdentifier>
+                        <componentClassID>0x00070002</componentClassID>
+                        <componentName>Storage Drive</componentName>
+                        <componentManufacturer>SEAGATE</componentManufacturer>
+                        <componentModel>ST18000NM005J</componentModel>
+                        <componentType>SCSI</componentType>
+                        <componentSerial>ZR504Z6W0000C105972J</componentSerial>
+                        <componentRevision>ET02</componentRevision>
+                        <componentManufacturerId/>
+                        <fieldReplaceable>false</fieldReplaceable>
+                        <componentProperties>
+                                <Property>Capacity</Property>
+                                <Value>18.0 TB</Value>
+                        </componentProperties>
+                </ComponentIdentifier>
+                <ComponentIdentifier>
+                        <componentClassID>0x00070002</componentClassID>
+                        <componentName>Storage Drive</componentName>
+                        <componentManufacturer>SEAGATE</componentManufacturer>
+                        <componentModel>ST18000NM005J</componentModel>
+                        <componentType>SCSI</componentType>
+                        <componentSerial>ZR5056HD0000C107GP5G</componentSerial>
+                        <componentRevision>ET02</componentRevision>
+                        <componentManufacturerId/>
+                        <fieldReplaceable>false</fieldReplaceable>
+                        <componentProperties>
+                                <Property>Capacity</Property>
+                                <Value>18.0 TB</Value>
+                        </componentProperties>
+                </ComponentIdentifier>
+                <ComponentIdentifier>
+                        <componentClassID>0x00070002</componentClassID>
+                        <componentName>Storage Drive</componentName>
+                        <componentManufacturer>SEAGATE</componentManufacturer>
+                        <componentModel>ST18000NM005J</componentModel>
+                        <componentType>SCSI</componentType>
+                        <componentSerial>ZR5056GS0000C105D6S3</componentSerial>
+                        <componentRevision>ET02</componentRevision>
+                        <componentManufacturerId/>
+                        <fieldReplaceable>false</fieldReplaceable>
+                        <componentProperties>
+                                <Property>Capacity</Property>
+                                <Value>18.0 TB</Value>
+                        </componentProperties>
+                </ComponentIdentifier>
+                <ComponentIdentifier>
+                        <componentClassID>0x00040009</componentClassID>
+                                               <componentName>Trusted Platform Module</componentName>
+                        <componentManufacturer>IFX</componentManufacturer>
+                        <componentModel>SLB9665</componentModel>
+                        <componentType>TPM 2.0</componentType>
+                        <componentSerial>4734A10C</componentSerial>
+                        <componentRevision>5.50.7e600</componentRevision>
+                        <componentManufacturerId/>
+                        <fieldReplaceable>false</fieldReplaceable>
+                </ComponentIdentifier>
+        </ComponentIdentifiers>
+        <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+                <SignedInfo>
+                        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+                        <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+                        <Reference URI="">
+                                <Transforms>
+                                        <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                                </Transforms>
+                                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                                <DigestValue>g4/6LCxaSYwKEa8CiQidi+DUAu7F4z5BY70IEA3qjrE=</DigestValue>
+                        </Reference>
+                </SignedInfo>
+                <SignatureValue>CHuj01eMXwj7/gsDO9i4LNCsvgIq+n+FMR3ZbxfTWLQ1sapwlwW4x1iZaSaObgy9
+RMl8J3STFZwppTEw4MkwISMlrOHsYyl7y5PpXN5bWCpF+A5PZd2EL63UsIxogZH1
+cb0qbj71Nw/elnadTdyeOiihWSGOwWcwgf5XgkjHr6i8Yqzui9E7cAz7N63ZMLhh
+wDGtuyCtu0SXzO+XS/qOMf0Y5tdjTcSHv4OHGyjCTunI/1Avs5pg33/ZJt0VTuGO
+42jop9QLMrIlcjeuxVLPdRxYUJRiP2wTchIB/vp+IOmZglizCOiI10iubF7QfFHC
+JjIxpDsHN+3wYJUbJemiiA==</SignatureValue>
+                <KeyInfo>
+                        <KeyName>............_TSC_Private.pem</KeyName>
+                </KeyInfo>
+        </Signature>
+</DirectPlatformData>
+
+

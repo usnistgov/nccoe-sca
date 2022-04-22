@@ -1,0 +1,38 @@
+<%- include('../partials/header') %>
+<div class="container">
+    <h1>Archer API</h1>
+    <% if (query.error) { %>
+        <div class="alert alert-danger">ERROR: Invalid file selection</div>
+    <% } else if (query.success) { %>
+        <div class="alert alert-success">File upload successful</div>
+    <% } %> 
+    <form class="border rounded p-3" action="/api/upload" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="webUI" id="webUI" value="true" />
+        <h2>File Upload</h2>
+        <div class="form-group">
+            <label for="file-selection">Select an asset JSON file to upload</label><br />
+            <input type="file" accept=".json" class="form-control-file" name="jsonFile" id="file-selection">
+        </div>
+        <div class="form-group">
+            <label for="type">Asset type</label>
+            <select class="form-select" name="type" id="type">
+            <% for (key in vendors) { %>
+                <option value="<%= key %>"><%= vendors[key] %></option>
+            <% } %>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="uuid">UUID (when required)</label>
+            <input type="text" class="form-control" name="UUID" placeholder="UUID..." />
+        </div><br />
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+    <div class="border rounded p-3">
+        <h2>Current Files</h2>
+        <% for (file of files) {
+            if (file === '.gitkeep') continue; %>
+            <p><%= file %></p>
+        <% } %>
+    </div>
+</div>
+<%- include('../partials/footer') %>

@@ -1,0 +1,70 @@
+# Some menu defaults
+set menu-timeout 0
+set submenu-timeout ${menu-timeout}
+set menu-default windows10_pe_dell
+
+:start
+menu iPXE boot menu
+item --gap --                   ------------------------- Acceptance Testing Environments ------------------------------
+item --key l    hirs_provisioner_live        HIRS Provisioner Live
+item --key p    windows10_pe_dell_0818            Windows 10 PE
+item --gap --                   ------------------------- Acceptance Testing Environments (testing) ------------------------------
+item            hpe_provisioner_live         HPE Provisioner Live
+item            hirs_provisioner_live_testing        HIRS Provisioner Live
+item --gap --                   ------------------------- Advanced options -------------------------------
+item            shell                   Drop to iPXE shell
+item            reboot                  Reboot
+item
+item --key x    exit                    Exit iPXE and continue BIOS boot
+choose --timeout ${menu-timeout} --default ${menu-default} selected || goto cancel
+set menu-timeout 0
+goto ${selected}
+
+:cancel
+echo You cancelled the menu, dropping you to a shell
+
+:shell
+echo Type 'exit' to get the back to the menu
+shell
+set menu-timeout 0
+set submenu-timeout 0
+goto start
+
+:reboot
+reboot
+
+:exit
+exit
+
+###
+### Custom menu entries
+###
+
+:hirs_provisioner_live
+set dist-root ${live-images}/provisioner
+kernel ${dist-root}/vmlinuz0 rootflags=loop initrd=initrd0.img root=live:/livecd-new-ks-202107151449.iso rd.live.image rootfstype=auto ro quiet net.ifnames=0 biosdevname=0 rd.luks=0 rd.md=0 rd.dm=
+initrd ${dist-root}/initrd0.img
+boot
+goto start
+
+:windows10_pe_dell
+kernel ${live-images}/wimboot
+initrd ${live-images}/winpe_dell/media/Boot/BCD                     BCD
+initrd ${live-images}/winpe_dell/media/Boot/boot.sdi                boot.sdi
+initrd ${live-images}/winpe_dell/media/sources/boot.wim             boot.wim
+boot
+goto start
+
+:hpe_provisioner_live
+set dist-root ${live-images}/hpe_provisioner
+kernel ${dist-root}/vmlinuz0 rootflags=loop initrd=initrd0.img root=live:/hpeiso.iso rootfstype=auto ro rd.live.image quiet  rhgb rd.luks=0 rd.md=0 rd.dm=0
+initrd ${dist-root}/initrd0.img
+boot
+goto start
+
+:hirs_provisioner_live_testing
+set dist-root ${live-images}/provisioner_test
+kernel ${dist-root}/vmlinuz0 rootflags=loop initrd=initrd0.img root=live:/hirs.iso rd.live.image rootfstype=auto ro quiet net.ifnames=0 biosdevname=0 rd.luks=0 rd.md=0 rd.dm=
+initrd ${dist-root}/initrd0.img
+boot
+goto start

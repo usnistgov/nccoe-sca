@@ -1,0 +1,70 @@
+{
+    
+    "PLATFORM": {
+        "PLATFORMMANUFACTURERSTR": "Microsoft Corporation","PLATFORMMODEL": "Surface Pro 3","PLATFORMVERSION": "1","PLATFORMSERIAL": "027009345053"
+    },
+    "COMPONENTS": [
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00020001"
+    },"MANUFACTURER": "Microsoft Corporation","MODEL": "9","SERIAL": "027009345053","REVISION": "1"
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00030003"
+    },"MANUFACTURER": "Microsoft Corporation","MODEL": "Surface Pro 3","FIELDREPLACEABLE": "true","SERIAL": "027009345053","REVISION": "1"
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00130003"
+    },"MANUFACTURER": "American Megatrends Inc.","MODEL": "Not Specified","REVISION": "3.11.2650"
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00010002"
+    },"MANUFACTURER": "Intel(R) Corporation","MODEL": "205","FIELDREPLACEABLE": "false","REVISION": "Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz"
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00060001"
+    },"MANUFACTURER": "0000","MODEL": "Not Specified","FIELDREPLACEABLE": "true","SERIAL": "00000000"
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00060001"
+    },"MANUFACTURER": "0000","MODEL": "Not Specified","FIELDREPLACEABLE": "true","SERIAL": "00000000"
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00090002"
+    },"MANUFACTURER": "11AB","MODEL": "2B38","FIELDREPLACEABLE": "true","SERIAL": "4C0BBE25C67A","REVISION": "00", "ADDRESSES": [{
+                "WLANMAC": "4C0BBE25C67A" }]
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00070002"
+    },"MANUFACTURER": "Not Specified","MODEL": "SAMSUNG MZMTE256","FIELDREPLACEABLE": "true","SERIAL": "S1F1NYAFB50740"
+        },
+        {
+            "COMPONENTCLASS": {
+        "COMPONENTCLASSREGISTRY": "2.23.133.18.3.1",
+        "COMPONENTCLASSVALUE": "00050002"
+    },"MANUFACTURER": "8086","MODEL": "0A16","FIELDREPLACEABLE": "true","REVISION": "0B"
+        }
+    ],
+    "PROPERTIES": [
+        {
+            "NAME": "caption",
+            "VALUE": "Microsoft Windows 10 Pro"
+        }
+
+    ]
+}
