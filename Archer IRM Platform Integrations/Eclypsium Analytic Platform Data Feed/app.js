@@ -12,9 +12,12 @@ const transportSettings = {
   runTime: new Date(),
 
   // Eclypsium Configuration
-  url: "https://demo-0124.eclypsium.cloud/api/v1",
-  client_id: "3vs6DAjqZEqE3g",
-  client_secret: "oKGTw3iv8GxzG0AakB_-RQ--ppcAmiTJYUhG6XJ6",
+  
+  //"url", "client_id", and "client_secret" will be replaced in the Archer Data Feed configuration.
+  //For the "url" parameter, use either cloud or on-premises for the Eclypsium backend. 
+  url: "",
+  client_id: "",
+  client_secret: "",
   ignoreLastRunTime: "true",
   scenario: "2"
 };
