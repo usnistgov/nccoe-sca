@@ -3,7 +3,7 @@
 # Location of the Intel artifacts. Stored on network share, with serial number used as identifier
 # TODO: Find a method to pass the organizational UUID to this script for consistency
 $serialnumber = Get-WmiObject Win32_Bios | Select-Object SerialNumber
-$artifactdirectory = "\\10.151.48.225\Users\Public\Intel\" + $serialnumber.SerialNumber
+$artifactdirectory = "\\<hostname>\Users\Public\Intel\" + $serialnumber.SerialNumber
 
 ##############FOR TESTING##################
 # $dpdfile = "CLIENT_DEMO_43125_5CG9255XRZ_DPD_5CG9255XRZ_DPD_INTC_Platform_Data.xml"

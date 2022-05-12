@@ -13,7 +13,8 @@ function New-Archer-Upload {
   
     # We have a REST-Endpoint
     # Uncomment for local testing
-	#$url = "http://localhost:3001/api/upload"
+	  #$url = "http://localhost:3001/api/upload"
+    # Replace with the hostname of your Platform Manifest Collation System
   $url = "<collator-hostname>"
   $fileBin = [System.IO.File]::ReadAllBytes($FilePath)
 	$enc = [System.Text.Encoding]::GetEncoding("utf-8")

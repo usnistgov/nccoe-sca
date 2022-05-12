@@ -2,7 +2,10 @@
 
 eclypsium_script="eclypsium_agent_deployer.run"
 eclypsium_build_script="scl enable devtoolset-9 ./eclypsium_agent_builder-2.8.1.run"
-eclypsium_script_host="hirs-aca.lab.nccoe.org"
+
+# Replace with the hostname where pre-compiled Eclypsium portable scanner is hosted
+eclypsium_script_host="<hostname>"
+# Directory paths to pre-compiles Eclypsium portable scanner
 eclypsium_script_path_vm="/Eclypsium_VM/"
 eclypsium_script_path_dell="/Eclypsium_Dell_Laptop/"
 eclypsium_script_path_hpinc="/Eclypsium_HPInc_Laptop/"
@@ -10,7 +13,8 @@ eclypsium_script_final_url=""
 provisioner_script="hirs-provisioner"
 allcomponents_script="/opt/paccor/scripts/allcomponents.sh"
 allcomponents_output_file="system.json"
-collator_host="collator.lab.nccoe.org"
+# Replace with the Platform Manifest Collation System hostname 
+collator_host="<pmcs-hostname>"
 collator_path="/api/upload"
 
 # Script to scan and register computing device in the Eclypsium service from Centos7 network boot environment
@@ -20,6 +24,9 @@ ProductName=`dmidecode --string='system-product-name'`
 SerialNumber=`dmidecode --string='system-serial-number'`
 UUID=`dmidecode -s system-uuid`
 
+# These are the possible values for ProductName in this demonstration. 
+# They are used to download the correct version of the Eclypsium Portable Scanner
+# Adjust to your environment. 
 VMWARE="VMware Virtual Platform"
 QEMU="Standard PC (Q35 + ICH9, 2009)"
 HPINC1="HP EliteBook 840 G7 Notebook PC"
@@ -47,7 +54,7 @@ else
 	wget $eclypsium_script_final_url
 	chmod +x $eclypsium_script
 	echo "Scanning and registering client device to Eclypsium..."
-	./$eclypsium_script -- --run -s1 demo-0124.eclypsium.cloud secxvhI545Es4gj1eud1S4c38UI2NBkmjFmEylx4HLnYFE -ca-cert-path /etc/pki/tls/certs/ca-bundle.crt -medium -custom-id $UUID
+	./$eclypsium_script -- --run -s1 <eclypsium <eclypsium-token> -ca-cert-path /etc/pki/tls/certs/ca-bundle.crt -medium -custom-id $UUID
                 
 fi
 

@@ -1,7 +1,9 @@
 #!/bin/bash
 
 hpe_script="./platform_verification_CentOS8.sh"
-collator_host="collator.lab.nccoe.org"
+
+# Replace with the hostname of the Platform Manifest Collation System
+collator_host="<pmcs-hostname>"
 collator_path="/api/upload"
 manifest_file="/opt/hpe/scl/HPE_hardware_manifest.json"
 

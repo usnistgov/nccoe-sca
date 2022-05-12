@@ -1,12 +1,5 @@
 #!/bin/bash
 
-eclypsium_script="eclypsium_agent_deployer.run"
-eclypsium_build_script="scl enable devtoolset-9 ./eclypsium_agent_builder-2.8.1.run"
-eclypsium_script_host="hirs-aca.lab.nccoe.org"
-eclypsium_script_path_vm="/Eclypsium_VM/"
-eclypsium_script_path_dell="/Eclypsium_Dell_Laptop/"
-eclypsium_script_path_hpinc="/Eclypsium_HPInc_Laptop/"
-eclypsium_script_final_url=""
 tscverify="TSCVerifyUtil"
 dpd_output_file="DPDOutput.xml"
 seagate_drive_array=("sg1" "sg2" "sg3")
@@ -43,8 +36,7 @@ for drive in ${seagate_drive_array[@]}; do
             echo "Seagate firmware attestation failed. Exiting script"
             exit 1
     fi
-    #echo "Pushing Seagate component data to collator..."
-    #curl -F "jsonFile=@$fw_attestation_output_file$drive.json" -F "UUID=$UUID" -F "type=$seagate_component" http://$collator_host$collator_path
+
     echo "Pushing Seagate firmware hash data to collator..."
     curl -F "jsonFile=@$fw_attestation_output_file$drive.json" -F "UUID=$UUID" -F "type=$seagate_fw_hash" http://$collator_host$collator_path
     echo "Pushing Seagate atttestation data to collator..."
