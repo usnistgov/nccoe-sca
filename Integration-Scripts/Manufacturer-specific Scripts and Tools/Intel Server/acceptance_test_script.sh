@@ -15,9 +15,6 @@ seagate_component="Seagate.Component"
 intel_server="Intel.Server"
 
 
-# TODO: Eclypsium
-
-
 mkdir -p $output_directory
 
 # Only scanning until new DPD file can be generated

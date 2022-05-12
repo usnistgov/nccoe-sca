@@ -6,7 +6,9 @@ repo --name="AppStream" --baseurl="http://mirror.rackspace.com/centos/8/AppStrea
 skipx
 selinux --disabled
 
-rootpw --iscrypted $6$SALT$LzA4I7R7EERO5XfvDLGBuCovbT2dBLNOtNeeGrGg1IaZD86doZkyOxxuIh2Wu8W6IIKf.WszM0FeOgLAgZIVG1
+# Set the root password below https://docs.fedoraproject.org/en-US/Fedora/html/Installation_Guide/sect-kickstart-commands-rootpw.html
+rootpw --iscrypted <encrypted password>
+
 
 # Fill in password below if desired.
 user --name='tsmith' --password='' --plaintext
@@ -14,8 +16,7 @@ user --name='tsmith' --password='' --plaintext
 
 %packages --ignoremissing --multilib --instLangs en_US
 @core
-#@security-tools
-#@system-admin-tools
+
 
 kernel
 dracut-config-generic
@@ -43,30 +44,19 @@ zsh
 unzip
 jq
 
-# unnecessary firmware
-#-alsa*firmware*
-#-iwl*firmware
-#-ivtv*
-#-plymouth
-#-aic94xx-firmware
-#-atmel-firmware
-#-b43-openfwwf
-#-bfa-firmware
-#-ipw*-firmware
-#-libertas-usb8388-firmware
-#-ql*-firmware
-#-rt61pci-firmware
-#-rt73usb-firmware
-#-xorg-x11-drv-ati-firmware
-#-zd1211-firmware
 %end
 
 %post
 
 # Per the docs resolve.conf doesn't exist yet in %post so we can't download externally
+# In this case, setup a web server locally with the appropriate artifacts
 
 echo "Installing Java runtime..."
 rpm -ihv http://localhost/zulu11.52.13-ca-jdk11.0.13-linux.x86_64.rpm
+
+# These are built from the PCVT GitHub repository
+# https://github.com/HewlettPackard/PCVT
+# Include HPE certificates if iLO is not available
 
 echo "Installing HPE acceptance test software..."
 wget http://localhost/hpe-tooling.zip

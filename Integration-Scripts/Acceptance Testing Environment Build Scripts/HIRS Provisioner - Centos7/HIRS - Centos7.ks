@@ -15,7 +15,9 @@ bootloader --location=mbr --append="net.ifnames=0 biosdevname=0"
 network --bootproto=dhcp --device=link --noipv6 --hostname=hirs-provisioner-pxe
 
 auth --useshadow  --passalgo=sha512
-rootpw --iscrypted $6$JmD9RUuedb1wjOpM$AU2nxPEf5E237.SuqnelpxsXUjNjknMtJXZM6pLzuIzE8JZ6dkIwhdly.2h/p8sFu0OOdzY/3FLqAB71eVHnw1
+
+# Set the root password below https://docs.fedoraproject.org/en-US/Fedora/html/Installation_Guide/sect-kickstart-commands-rootpw.html
+rootpw --iscrypted <encrypted password>
 
 selinux --disabled
 firewall --enabled --service=dhcp --port=32400:tcp,5001:udp,5201:udp
@@ -130,6 +132,9 @@ devtoolset-9
 
 #========================= Post-Installation Scripts ==========================#
 #==============================================================================#
+# Replace the hosts and IP addresses to fit your environment.
+# <pcms-hostname> is the Platform Manifest Collation System
+# <asset-hostname> is the system that hosts other artifacts for the build
 
 %post --log=kickstart_bash_post.log --interpreter=/bin/bash
 
@@ -141,24 +146,19 @@ EOF
 
 #============================== Install Tools =================================#
 cat >> /etc/hosts <<EOF
-10.32.50.169 hirs-aca.sca.lab.nccoe.org
-10.32.50.165 collator.lab.nccoe.org
+10.32.50.169 <asset-hostname>
+10.32.50.165 <pcms-hostname>
 EOF
 
 #============================= Update certs for Eclypsium =====================#
 
 
-curl -o /etc/pki/ca-trust/source/anchors/curl-cacert.pem http://hirs-aca.sca.lab.nccoe.org/curl-cacert.pem
-curl -o /etc/pki/ca-trust/source/anchors/isrg-root-x1.pem http://hirs-aca.sca.lab.nccoe.org/isrg-root-x1.pem
-curl -o /etc/pki/ca-trust/source/anchors/root-ca-x3.pem http://hirs-aca.sca.lab.nccoe.org/root-ca-x3.pem
+curl -o /etc/pki/ca-trust/source/anchors/curl-cacert.pem http://<asset-hostname>/curl-cacert.pem
+curl -o /etc/pki/ca-trust/source/anchors/isrg-root-x1.pem http://<asset-hostname>/isrg-root-x1.pem
+curl -o /etc/pki/ca-trust/source/anchors/root-ca-x3.pem http://<asset-hostname>/root-ca-x3.pem
 
 update-ca-trust
 
-
-# Uncomment below if building the Eclypsium client on the computing device
-#cd /root/
-#curl http://hirs-aca.sca.lab.nccoe.org/eclypsium_agent_builder-2.8.1.run -o /root/eclypsium_agent_builder-2.8.1.run
-#chmod +x /root/eclypsium_agent_builder-2.8.1.run
 
 cat >> /etc/systemd/system/tpm2-abrmd <<EOF
 [Unit]
@@ -186,20 +186,21 @@ TPM_ENABLED=true
 IMA_ENABLED=false
 
 # Site-specific configuration
-ATTESTATION_CA_FQDN=collator.lab.nccoe.org
+ATTESTATION_CA_FQDN=<pcms-hostname>
 ATTESTATION_CA_PORT=443
-BROKER_FQDN=collator.lab.nccoe.org
+BROKER_FQDN=<pcms-hostname>
 BROKER_PORT=443
-PORTAL_FQDN=collator.lab.nccoe.org
+PORTAL_FQDN=<pcms-hostname>
 PORTAL_PORT=443
 EOF
 
 
 
 #================================ Create User =================================#
+# Replace encrypted password below
 
 /usr/sbin/useradd \
-    -p '$6$yOpyymJYxjNxp62J$CcNpqLoBkMIRQEksafVs3/LkV7SEFmcBWmS5kV9EquW7V33p83jGw3LDFITXYJlZWS/of7BZTp5tR8.BD.xz00' \
+    -p '<encrypted password>' \
     -G wheel \
     -c 'IT Administrators' \
     tsmith
@@ -237,29 +238,29 @@ yum -C clean all
 
 
 #===== Download provisioning script and updated wireless drivers ==================#
-curl http://hirs-aca.sca.lab.nccoe.org/provision.sh -o /root/provision.sh
-rpm -ihv http://hirs-aca.sca.lab.nccoe.org/hipxe-drivers-1.0-1.noarch.rpm
+curl http://<asset-hostname>/provision.sh -o /root/provision.sh
+rpm -ihv http://<asset-hostname>/hipxe-drivers-1.0-1.noarch.rpm
 chmod +x /root/provision.sh
 
 #===== Download Modified PACCOR script for Dell Laptops  ===========================#
 mv /opt/paccor/scripts/allcomponents.sh /opt/paccor/scripts/allcomponents.sh.original
-curl http://hirs-aca.sca.lab.nccoe.org/Dell_Laptop/allcomponents.sh -o /opt/paccor/scripts/allcomponents.sh
+curl http://<asset-hostname>/Dell_Laptop/allcomponents.sh -o /opt/paccor/scripts/allcomponents.sh
 chmod +x /opt/paccor/scripts/allcomponents.sh
 
 
 # Add custom compiled version of OpenSSL that will pretty print a platform certificate
 # This is just for debugging and not required for the provisioning step
 mkdir -p /boot/efi/EFI/TCG/CERT/PLATFORM
-curl http://hirs-aca.sca.lab.nccoe.org/HPINC_Laptop/HPInc.5CG0306VH9.BASE.cer -o /boot/efi/EFI/TCG/CERT/PLATFORM/HPInc.5CG0306VH9.BASE.cer
-curl http://hirs-aca.sca.lab.nccoe.org/VM/PlatformCredential.cer -o /boot/efi/EFI/TCG/CERT/PLATFORM/VM_PlatformCredential.cer
+curl http://<asset-hostname>/HPINC_Laptop/HPInc.5CG0306VH9.BASE.cer -o /boot/efi/EFI/TCG/CERT/PLATFORM/HPInc.5CG0306VH9.BASE.cer
+curl http://<asset-hostname>/VM/PlatformCredential.cer -o /boot/efi/EFI/TCG/CERT/PLATFORM/VM_PlatformCredential.cer
 
-curl http://hirs-aca.sca.lab.nccoe.org/openssl/ac_dump -o /usr/local/bin/ac_dump
+curl http://<asset-hostname>/openssl/ac_dump -o /usr/local/bin/ac_dump
 chmod +x /usr/local/bin/ac_dump
 
-curl http://hirs-aca.sca.lab.nccoe.org/openssl/libcrypto.so.3 -o /usr/local/lib/libcrypto.so.3
+curl http://<asset-hostname>/openssl/libcrypto.so.3 -o /usr/local/lib/libcrypto.so.3
 chmod +x /usr/local/lib/libcrypto.so.3
 
-curl http://hirs-aca.sca.lab.nccoe.org/openssl/libssl.so.3 -o /usr/local/lib/libssl.so.3
+curl http://<asset-hostname>/openssl/libssl.so.3 -o /usr/local/lib/libssl.so.3
 chmod +x  /usr/local/lib/libssl.so.3
 
 echo "export LD_LIBRARY_PATH=/usr/local/lib" >> /root/.bashrc
