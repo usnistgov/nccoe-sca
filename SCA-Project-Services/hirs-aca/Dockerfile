@@ -1,5 +1,15 @@
 FROM amazonlinux:2
 
+# Add trusted certificates for Yum
+ADD http://pki.mitre.org/MITRE%20BA%20ROOT.crt \
+http://pki.mitre.org/MITRE%20BA%20NPE%20CA-1.crt \
+http://pki.mitre.org/MITRE%20BA%20NPE%20CA-3.crt \
+http://pki.mitre.org/MITRE%20BA%20NPE%20CA-4.crt \
+http://pki.mitre.org/ZScaler_Root.crt \
+/usr/share/pki/ca-trust-source/anchors/
+RUN update-ca-trust
+
+
 # Install packages for building HIRS
 RUN yum -y update && yum clean all
 RUN yum groupinstall -y "Development Tools"

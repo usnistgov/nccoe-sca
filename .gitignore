@@ -7,4 +7,12 @@ node_modules/
 # Built Visual Studio Code Extensions
 .vsix
 
+# Environment Files
 .env
+
+.hirs-aca-volume/
+
+# Certificates
+SCA-Project-Services/nginx-proxy/certs/wildcard-lab-nccoe-org.cer
+SCA-Project-Services/nginx-proxy/certs/wildcard-lab-nccoe-org.key
+SCA-Project-Services/nginx-proxy/certs/wildcard-lab-nccoe-org.pass
