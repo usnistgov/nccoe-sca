@@ -15,6 +15,21 @@ on laptop (sometimes referred to by industry as client) computing devices. It al
 the operational usage of manufacturers’ tools that may be useful to your IT personnel who verify that
 the computing device is acceptable to receive into the acquiring organization.
 
+Participating Collaborators
+---------------------------
+
+Organizations participating in this project submitted their capabilities in response to an open call in the Federal Register for all sources of relevant security capabilities from academia and industry (vendors and integrators). The following respondents with relevant capabilities or product components (identified as “Technology Partners/Collaborators” herein) signed a Cooperative Research and Development Agreement to collaborate with NIST in a consortium to build this example solution.
+
+[Archer](https://www.archerirm.com/)  
+[Dell Technologies](https://www.dellemc.com/)  
+[Eclypsium](https://eclypsium.com/)  
+[HP Inc](https://www.hp.com/)  
+[Hewlett Packard Enterprise](https://www.hpe.com/us/en/home.html)  
+[IBM](https://www.ibm.com/us-en)  
+[Intel](http://www.intel.com/content/www/us/en/government/federal.html)  
+[National Security Agency](https://github.com/nsacyber/HIRS)  
+[Seagate](https://www.seagategov.com/)  
+
 Download and Installation
 -------------------------
 
