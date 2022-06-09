@@ -146,8 +146,8 @@ EOF
 
 #============================== Install Tools =================================#
 cat >> /etc/hosts <<EOF
-10.32.50.169 <asset-hostname>
-10.32.50.165 <pcms-hostname>
+<ip-address> <asset-hostname>
+<ip-address> <pcms-hostname>
 EOF
 
 #============================= Update certs for Eclypsium =====================#
