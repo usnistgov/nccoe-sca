@@ -11,7 +11,7 @@ and best practices, and provide users with the materials lists, configuration fi
 they need to implement a similar approach.
 
 This preliminary draft of Volume C describes the steps necessary to set up an environment that focuses
-on laptop (sometimes referred to by industry as client) computing devices. It also provides guidance on
+on laptop (sometimes referred to by industry as client) and server computing devices. It also provides guidance on
 the operational usage of manufacturers’ tools that may be useful to your IT personnel who verify that
 the computing device is acceptable to receive into the acquiring organization.
 
